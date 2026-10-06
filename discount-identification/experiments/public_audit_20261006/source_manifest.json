@@ -1,0 +1,78 @@
+{
+  "access_date": "2026-10-06",
+  "sources": [
+    {
+      "file": "MTUM_latest.csv",
+      "url": "https://www.ishares.com/us/products/251614/ishares-msci-usa-momentum-factor-etf/latest-holdings.csv",
+      "version": "2026-10-02 holdings",
+      "bytes": 21206,
+      "sha256": "638ace8b88416d578df934319eb0d1e7d8b8c9d413ec3638109188b48e1361af"
+    },
+    {
+      "file": "ishares_product.html",
+      "url": "https://www.ishares.com/us/products/251614/ishares-msci-usa-momentum-factor-etf",
+      "version": "2026-10-02 fields; 2026-10-06 access",
+      "bytes": 1704129,
+      "sha256": "3b39010bc4996f3d4bfb7a40cfde882712efe7b7626915049653f48a4fd56f5e"
+    },
+    {
+      "file": "Cao_Cohen_Szpruch_2021_supplement.pdf",
+      "url": "https://proceedings.neurips.cc/paper/2021/file/671f0311e2754fcdd37f70a8550379bc-Supplemental.pdf",
+      "version": "2021 official supplement; Appendix B Theorems 6-7",
+      "bytes": 4308011,
+      "sha256": "383e498e25c3a48e851cb49effcd79a217d6ee1967e70588fe6e053cc66b100b"
+    },
+    {
+      "file": "Skalse_Abate_2411.15951v1.html",
+      "url": "https://arxiv.org/html/2411.15951v1",
+      "version": "2024-11-24 v1; sections 5.3 and 6.1",
+      "bytes": 3191392,
+      "sha256": "172e6c887637bffe9e7bcf4da951ab6f63db715f3444df7c94a809f52c5b7c39"
+    },
+    {
+      "file": "Shehab_2024.pdf",
+      "url": "https://proceedings.mlr.press/v242/shehab24a/shehab24a.pdf",
+      "version": "2024 official proceedings; Theorems 9 and 11",
+      "bytes": 339759,
+      "sha256": "57224facfc69c78160bd181cff9c64634cb80bf61cf66b2cd06fefb9aceb29e1"
+    },
+    {
+      "file": "Komarova_2018.pdf",
+      "url": "https://eprints.lse.ac.uk/86858/1/Komarova_Joint%20analysis_2018.pdf",
+      "version": "accepted manuscript; inner text November 5, 2017; journal 2018; Theorem 1",
+      "bytes": 500770,
+      "sha256": "c05569526ff67541491e4d586564f899f1fcda6d0f649f017cbae065f86348b3"
+    },
+    {
+      "file": "Non_exponential_2412.11155v1.html",
+      "url": "https://arxiv.org/html/2412.11155v1",
+      "version": "2024-12-15 v1; main text Theorems 6-8",
+      "bytes": 796813,
+      "sha256": "b137bdc12b606237839a6bed62db33e041f5c8b3b541c533b5f52e9d93e762b2"
+    },
+    {
+      "file": "Rodrigues_2211.09917v1.pdf",
+      "url": "https://arxiv.org/pdf/2211.09917v1",
+      "version": "2022-11-17 v1; Theorem 1",
+      "bytes": 432718,
+      "sha256": "aa9ef20b8ad47ee2b3efcfe14d534e8518c8b340b2d1d7a3febee15f6c4886b2"
+    },
+    {
+      "file": "historical_endpoint_response.html",
+      "url": "https://www.ishares.com/us/products/251614/ishares-msci-usa-momentum-factor-etf/1467271812596.ajax?fileType=csv&fileName=MTUM_holdings&dataType=fund&asOfDate=20260430",
+      "version": "HTML response; not a holdings CSV; no historical date certified",
+      "bytes": 1451668,
+      "sha256": "adfe655e905a723e8e6f87021c973dc08e5b502bd011e2c5dcf0982dba4e6445"
+    }
+  ],
+  "unsaved_access_failures": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1100663/000100472626005159/primary_doc.xml",
+      "status": 403
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0167268119301490",
+      "status": 403
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "main_sha256": "49a105b11493540b8f6dd14dc2ba20abd141109a7e91baa98e55202c347e99e8",
+  "internal_theorems": 8,
+  "internal_propositions": 4,
+  "new_local_links_valid": true,
+  "stability_outputs_byte_exact": true,
+  "overlap_outputs_byte_exact": true,
+  "exact_interval_checks": 120,
+  "bounded_coverage_checks": 128,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "openpyxl": "3.1.5"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "label": "E156",
+  "status": "exact_heterogeneous_risk_spurious_discount_and_extra_coefficient_rejection",
+  "true_common_beta": "0",
+  "risk_types": [
+    "1",
+    "4"
+  ],
+  "apparent_alpha": "22898/9125",
+  "apparent_beta": "963/1825",
+  "residuals": [
+    "3759/91250",
+    "40131/912500"
+  ],
+  "noise_checks": [
+    {
+      "epsilon": "1/100000000",
+      "q_eta": "9672492571729/307968750000000000",
+      "q_eta_display": 3.140738328719716e-05,
+      "radius_display": 0.00010705732589607906,
+      "residual_cap_exact": "4439980463101701617152586193637/555713508697944142585144042968750000",
+      "residual_cap_display": 7.989693238706268e-06,
+      "rejected": true
+    },
+    {
+      "epsilon": "1/1000000",
+      "q_eta": "193450213733/61593750000000",
+      "q_eta_display": 0.0031407442107843735,
+      "radius_display": 0.010739145247603981,
+      "residual_cap_exact": "568918578496665905860762781/709101509055071818359375000000",
+      "residual_cap_display": 0.0008023090787873099,
+      "rejected": true
+    },
+    {
+      "epsilon": "1/10000",
+      "q_eta": "7739457743/24637500000",
+      "q_eta_display": 0.31413324172501267,
+      "radius_display": 1.5611509215053692,
+      "residual_cap_exact": "50323925739505589597989/390305171350160156250000",
+      "residual_cap_display": 0.12893481673692136,
+      "rejected": false
+    }
+  ],
+  "limitations": "Plausible parameter output is not an observationally equivalent common positive world; necessary residual rejection only, not identification of failure cause."
+}

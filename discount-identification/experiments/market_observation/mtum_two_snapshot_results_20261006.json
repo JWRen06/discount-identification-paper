@@ -1,0 +1,50 @@
+{
+  "observation_id": "M01",
+  "net_asset_growth_percent": "24.1580693133786058107376868694489475936996080",
+  "holdings": {
+    "NVDA": {
+      "reported_balance_change": "946651.00000000",
+      "reported_balance_growth_percent": "20.2520177119661882690100065164084705608518310",
+      "value_growth_percent": "18.5179276743399288500485307940127338131720080",
+      "inferred_unit_value_growth_percent": "-1.44204652081584275766704528618697219615783500",
+      "weight_change_percentage_points": "-0.220797702667",
+      "weight_relative_change_percent": "-4.54271049012754391396771021643864872643236210",
+      "reported_weight_error_percent": [
+        "4.885388659422946466184337194479E-14",
+        "7.8678623568746438366316754787125E-13"
+      ],
+      "decomposition_residual": "1E-45",
+      "direction_reversal": true
+    },
+    "AVGO": {
+      "reported_balance_change": "89066.00000000",
+      "reported_balance_growth_percent": "2.93218889319795122741336205846468474673138600",
+      "value_growth_percent": "16.2432259548403018717613822581092263989072380",
+      "inferred_unit_value_growth_percent": "12.9318507696886075264453642832021210399588780",
+      "weight_change_percentage_points": "-0.367543630318",
+      "weight_relative_change_percent": "-6.37481188480871696812998762169759508903917810",
+      "reported_weight_error_percent": [
+        "5.1297755798503390545486028952534E-13",
+        "8.1505433830254572780470428054990E-13"
+      ],
+      "decomposition_residual": "1E-45",
+      "direction_reversal": true
+    }
+  },
+  "flows": [
+    {
+      "snapshot_date": "2025-10-31",
+      "sold_usd": "2189579451.50",
+      "redeemed_usd": "1244703418.70",
+      "net_usd": "944876032.80",
+      "window": "preceding three months; windows do not cover entire endpoint interval"
+    },
+    {
+      "snapshot_date": "2026-04-30",
+      "sold_usd": "1499737523.09",
+      "redeemed_usd": "959215788.40",
+      "net_usd": "540521734.69",
+      "window": "preceding three months; windows do not cover entire endpoint interval"
+    }
+  ]
+}

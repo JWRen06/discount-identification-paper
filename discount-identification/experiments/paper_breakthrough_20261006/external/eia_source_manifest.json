@@ -1,0 +1,73 @@
+{
+  "access_date": "2026-10-06",
+  "reader": "xlrd 2.0.2",
+  "selection": "2002-01-01 through 2022-05-23; numeric reported observations only; no interpolation",
+  "sources": [
+    {
+      "name": "WTI_EIA",
+      "series": "RWTC",
+      "url": "https://www.eia.gov/dnav/pet/hist_xls/RWTCd.xls",
+      "units": "USD/barrel",
+      "source_sheet": "Data 1",
+      "source_header": [
+        "Date",
+        "Cushing, OK WTI Spot Price FOB (Dollars per Barrel)"
+      ],
+      "source_valid_rows": 9512,
+      "source_invalid_rows": 0,
+      "source_first_date": "1986-01-02",
+      "source_last_date": "2026-09-29",
+      "selected_rows": 4794,
+      "selected_first": "2002-01-02",
+      "selected_last": "2022-05-23",
+      "raw_sha256": "60b717dd40815cb5e482ddcf115662a028cefd47d9f495e67d110eae00f7e421",
+      "csv_sha256": "10bc70151ca316fc4e112deafd4ca3190276aa3ec697d68208595b99e29ca553",
+      "full_csv_sha256": "10d860165000ac003d2e85805a432adaf4f34003c9e4c46ff64ae8ba7a6b86d0",
+      "full_rows": 5879
+    },
+    {
+      "name": "BRENT_EIA",
+      "series": "RBRTE",
+      "url": "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls",
+      "units": "USD/barrel",
+      "source_sheet": "Data 1",
+      "source_header": [
+        "Date",
+        "Europe Brent Spot Price FOB (Dollars per Barrel)"
+      ],
+      "source_valid_rows": 9097,
+      "source_invalid_rows": 0,
+      "source_first_date": "1987-05-20",
+      "source_last_date": "2026-09-29",
+      "selected_rows": 4980,
+      "selected_first": "2002-01-02",
+      "selected_last": "2022-05-23",
+      "raw_sha256": "bf3da33d21e30b387cc543bb1d6690d123ffd9b196f37cabd8624e9f9c08ecd1",
+      "csv_sha256": "c3c31ff06cb0738cc028130818f629de60ecb072277b0a79f89d063acc9e2d74",
+      "full_csv_sha256": "1d7107f9b59b28ca39a86977b0b75908f25eb9aa2becf481061dff41296c4398",
+      "full_rows": 6080
+    },
+    {
+      "name": "HENRY_EIA",
+      "series": "RNGWHHD",
+      "url": "https://www.eia.gov/dnav/ng/hist_xls/RNGWHHDd.xls",
+      "units": "USD/million_BTU",
+      "source_sheet": "Data 1",
+      "source_header": [
+        "Date",
+        "Henry Hub Natural Gas Spot Price (Dollars per Million Btu)"
+      ],
+      "source_valid_rows": 5697,
+      "source_invalid_rows": 1,
+      "source_first_date": "1997-01-07",
+      "source_last_date": "2026-09-29",
+      "selected_rows": 4132,
+      "selected_first": "2002-01-03",
+      "selected_last": "2022-05-23",
+      "raw_sha256": "8e1a3202a31c4b4d98be1341d0a6e8478c7c1d2c71ab9353e602bce8f4d8cfd7",
+      "csv_sha256": "c314c6aa28f3949d89da4591bb6e27ed00bd3f9d74264ecc2527ba4064c53a20",
+      "full_csv_sha256": "e78d0dad9e708213e593306e46f684805772a11136c8f33fb7c1ceaf960e3868",
+      "full_rows": 5217
+    }
+  ]
+}

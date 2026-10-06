@@ -1,0 +1,45 @@
+{
+  "label": "E157",
+  "status": "exact_positive_four_support_base_and_two_lag_identity",
+  "determinant_exact": "-1225/1677393920488",
+  "targets": [
+    "0",
+    "1/10",
+    "3/10",
+    "7/10"
+  ],
+  "weights": [
+    "1/100",
+    "39250517/186984000",
+    "5586741/145432000",
+    "1"
+  ],
+  "T": "1030593/1960000",
+  "baseline_filter": [
+    "1/2",
+    "1/4",
+    "1/4"
+  ],
+  "identity_checks": [
+    {
+      "fee": "1",
+      "f0": "1480427/4155200",
+      "f1": "662159/2597000",
+      "Euler_first_lag": true
+    },
+    {
+      "fee": "2",
+      "f0": "166134743/594193600",
+      "f1": "705123373/2970968000",
+      "Euler_first_lag": true
+    },
+    {
+      "fee": "15/4",
+      "f0": "1085429647/5196597000",
+      "f1": "42662671151/207863880000",
+      "Euler_first_lag": true
+    }
+  ],
+  "proof_method": "Nearby worlds defined by exact invertible linear solve and continuity, not numerical Jacobian. See H80 full proof.",
+  "limitations": "Known alpha case not covered by this lower bound; no numerical perturbation advertised as exact world."
+}

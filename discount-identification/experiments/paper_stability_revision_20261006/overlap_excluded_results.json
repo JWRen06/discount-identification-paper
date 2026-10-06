@@ -1,0 +1,164 @@
+{
+  "historical_overlap_dates": [
+    "2022-05-24T00:00:00",
+    "2022-05-25T00:00:00",
+    "2022-05-26T00:00:00",
+    "2022-05-27T00:00:00",
+    "2022-05-31T00:00:00",
+    "2022-06-01T00:00:00",
+    "2022-06-02T00:00:00",
+    "2022-06-03T00:00:00",
+    "2022-06-06T00:00:00",
+    "2022-06-07T00:00:00",
+    "2022-06-08T00:00:00",
+    "2022-06-09T00:00:00",
+    "2022-06-10T00:00:00",
+    "2022-06-13T00:00:00",
+    "2022-06-14T00:00:00",
+    "2022-06-15T00:00:00",
+    "2022-06-16T00:00:00",
+    "2022-06-17T00:00:00",
+    "2022-06-21T00:00:00",
+    "2022-06-22T00:00:00",
+    "2022-06-23T00:00:00",
+    "2022-06-24T00:00:00",
+    "2022-06-27T00:00:00",
+    "2022-06-28T00:00:00",
+    "2022-06-29T00:00:00",
+    "2022-06-30T00:00:00",
+    "2022-07-01T00:00:00",
+    "2022-07-05T00:00:00",
+    "2022-07-06T00:00:00",
+    "2022-07-07T00:00:00",
+    "2022-07-08T00:00:00",
+    "2022-07-11T00:00:00"
+  ],
+  "selected_module": "fixed_ar1",
+  "results": [
+    {
+      "series": "WTI_EIA",
+      "excluded": 32,
+      "evaluation_start": "2022-07-12T00:00:00",
+      "evaluation_end": "2026-09-29T00:00:00",
+      "cases": {
+        "0.45": {
+          "observations": 1053,
+          "mean_loss": 0.002580679612758411,
+          "discounted_mean_loss": 0.0025455654853668397
+        },
+        "0.6": {
+          "observations": 1053,
+          "mean_loss": 0.002530760852059864,
+          "discounted_mean_loss": 0.0024966468749682324
+        },
+        "0.8": {
+          "observations": 1053,
+          "mean_loss": 0.002471975658789302,
+          "discounted_mean_loss": 0.0024390338193406237
+        },
+        "0.95": {
+          "observations": 1053,
+          "mean_loss": 0.002443425215162792,
+          "discounted_mean_loss": 0.002411035640111555
+        },
+        "0.99": {
+          "observations": 1053,
+          "mean_loss": 0.0024390964065171138,
+          "discounted_mean_loss": 0.0024067852818689165
+        },
+        "0.9999": {
+          "observations": 1053,
+          "mean_loss": 0.0024382569090303854,
+          "discounted_mean_loss": 0.0024059603966336495
+        }
+      },
+      "improvement_vs_045": 0.0548424660593918,
+      "improvement_vs_080": 0.01356005088765655,
+      "improvement_vs_099": 0.0003427332057749366
+    },
+    {
+      "series": "BRENT_EIA",
+      "excluded": 0,
+      "evaluation_start": "2022-05-24T00:00:00",
+      "evaluation_end": "2026-09-29T00:00:00",
+      "cases": {
+        "0.45": {
+          "observations": 1100,
+          "mean_loss": 0.005273568075021918,
+          "discounted_mean_loss": 0.005189367611371771
+        },
+        "0.6": {
+          "observations": 1100,
+          "mean_loss": 0.005151077581809929,
+          "discounted_mean_loss": 0.005069495474588832
+        },
+        "0.8": {
+          "observations": 1100,
+          "mean_loss": 0.00502760304117911,
+          "discounted_mean_loss": 0.004948491913717801
+        },
+        "0.95": {
+          "observations": 1100,
+          "mean_loss": 0.004990005907040551,
+          "discounted_mean_loss": 0.004911411478664318
+        },
+        "0.99": {
+          "observations": 1100,
+          "mean_loss": 0.00498944850496563,
+          "discounted_mean_loss": 0.004910766884927015
+        },
+        "0.9999": {
+          "observations": 1100,
+          "mean_loss": 0.0049899092282832715,
+          "discounted_mean_loss": 0.004911192069408286
+        }
+      },
+      "improvement_vs_045": 0.05360490194487322,
+      "improvement_vs_080": 0.007537618522951428,
+      "improvement_vs_099": -8.658209425016494e-05
+    },
+    {
+      "series": "HENRY_EIA",
+      "excluded": 0,
+      "evaluation_start": "2022-05-24T00:00:00",
+      "evaluation_end": "2026-09-29T00:00:00",
+      "cases": {
+        "0.45": {
+          "observations": 1085,
+          "mean_loss": 0.007663228177474982,
+          "discounted_mean_loss": 0.007463580991941685
+        },
+        "0.6": {
+          "observations": 1085,
+          "mean_loss": 0.0076442891129748156,
+          "discounted_mean_loss": 0.007444968654489483
+        },
+        "0.8": {
+          "observations": 1085,
+          "mean_loss": 0.007600681861230434,
+          "discounted_mean_loss": 0.0074027586844600144
+        },
+        "0.95": {
+          "observations": 1085,
+          "mean_loss": 0.007550779016718593,
+          "discounted_mean_loss": 0.007354804757336133
+        },
+        "0.99": {
+          "observations": 1085,
+          "mean_loss": 0.007535560855200287,
+          "discounted_mean_loss": 0.007340209765179869
+        },
+        "0.9999": {
+          "observations": 1085,
+          "mean_loss": 0.007531718755358451,
+          "discounted_mean_loss": 0.007336526350502569
+        }
+      },
+      "improvement_vs_045": 0.017023281662823075,
+      "improvement_vs_080": 0.008946980008477268,
+      "improvement_vs_099": 0.0005018132717096169
+    }
+  ],
+  "source_sha256": "f8afcc5fc60fff53248010448faae84c7e81239290661f6b3a0900bbe9863f87",
+  "interpretation": "Retrospective overlap exclusion; previously evaluated remaining dates are not new unseen validation. Initial policy states keep historical recursion; exclusion changes scoring only."
+}

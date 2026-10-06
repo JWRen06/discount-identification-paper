@@ -1,0 +1,137 @@
+{
+  "source": "https://www.ishares.com/us/products/251614/ishares-msci-usa-momentum-factor-etf/latest-holdings.csv",
+  "reported_date": "Oct 02, 2026",
+  "shares_outstanding": "63,800,000.00",
+  "original_sha256": "638ace8b88416d578df934319eb0d1e7d8b8c9d413ec3638109188b48e1361af",
+  "records": 129,
+  "equity_records": 125,
+  "product_page_sha256": "3b39010bc4996f3d4bfb7a40cfde882712efe7b7626915049653f48a4fd56f5e",
+  "same_date_official_nav_usd": "20591383910",
+  "holdings_value_minus_nav_usd": "-145104452.60",
+  "holdings_value_minus_nav_pct": "-0.70468528601193954428097494492297093983907951915800",
+  "weights_failing_rounding_if_official_nav_used": 48,
+  "asset_class_counts": {
+    "Equity": 125,
+    "Money Market": 1,
+    "Cash": 1,
+    "Cash Collateral and Margins": 1,
+    "Futures": 1
+  },
+  "duplicate_tickers": {},
+  "sum_reported_values_usd": "20446279457.40",
+  "sum_reported_weights_pct": "99.98",
+  "max_equity_value_minus_quantity_price_usd": "0.0000",
+  "max_weight_difference_ppt": "0.00499101552615561483516985043553941579219726076559",
+  "weights_within_half_rounding_unit": 129,
+  "feasible_common_denominator_usd": [
+    "20445529665.306122448979591836734693877551020408163",
+    "20448168112.643678160919540229885057471264367816092"
+  ],
+  "sum_values_in_denominator_interval": true,
+  "top10_value_share_pct": "36.801109389301230083655679340768668447320466095353",
+  "equity_sector_value_share_pct": {
+    "Information Technology": "54.882744051405777593419190297171546865507140136209",
+    "Industrials": "10.260111815261097420199247012175878879025029480129",
+    "Health Care": "9.1745908436709754427637338060322935591766563506542",
+    "Energy": "8.5805719192840127105520073453713431293365239044950",
+    "Financials": "5.1577310396113553220009408908471627784452978040220",
+    "Communication": "4.6654828206642469188732805273449260274904218525963",
+    "Consumer Staples": "2.7465874889367831946495187103389395151542765198711",
+    "Real Estate": "1.7484979036643811259697704888712013755809793463769",
+    "Consumer Discretionary": "1.7054221878680170249642496212319230921439728790430",
+    "Materials": "0.79628998580998334662818683303046694079956657533032",
+    "Utilities": "0.17428082568392763945808905923029145342605807163842"
+  },
+  "non_equity_records": [
+    {
+      "ticker": "XTSLA",
+      "asset_class": "Money Market",
+      "value_usd": "15110791.96",
+      "quantity": "15110792.00",
+      "price": "1.00",
+      "reported_weight_pct": "0.07",
+      "weight_from_sum_values_pct": "0.073904849004355367810830262236284560781129999190128",
+      "weight_difference_ppt": "0.003904849004355367810830262236284560781129999190128",
+      "naive_quantity_times_price_residual_usd": "-0.0400",
+      "equity_identity_checked": false
+    },
+    {
+      "ticker": "USD",
+      "asset_class": "Cash",
+      "value_usd": "5197626.08",
+      "quantity": "5197626.00",
+      "price": "100.00",
+      "reported_weight_pct": "0.03",
+      "weight_from_sum_values_pct": "0.025420889364391692235405766082200218142461042502566",
+      "weight_difference_ppt": "-0.004579110635608307764594233917799781857538957497434",
+      "naive_quantity_times_price_residual_usd": "-514564973.9200",
+      "equity_identity_checked": false
+    },
+    {
+      "ticker": "SGAFT",
+      "asset_class": "Cash Collateral and Margins",
+      "value_usd": "1710000.00",
+      "quantity": "1710000.00",
+      "price": "100.00",
+      "reported_weight_pct": "0.01",
+      "weight_from_sum_values_pct": "0.0083633797706952004755493800355416049904860379412648",
+      "weight_difference_ppt": "-0.0016366202293047995244506199644583950095139620587352",
+      "naive_quantity_times_price_residual_usd": "-169290000.0000",
+      "equity_identity_checked": false
+    },
+    {
+      "ticker": "ESZ6",
+      "asset_class": "Futures",
+      "value_usd": "0.00",
+      "quantity": "59.00",
+      "price": "7777.25",
+      "reported_weight_pct": "0.00",
+      "weight_from_sum_values_pct": "0",
+      "weight_difference_ppt": "0.00",
+      "naive_quantity_times_price_residual_usd": "-458857.7500",
+      "equity_identity_checked": false
+    }
+  ],
+  "top10": [
+    {
+      "ticker": "AMD",
+      "reported_weight_pct": "6.36"
+    },
+    {
+      "ticker": "MU",
+      "reported_weight_pct": "5.37"
+    },
+    {
+      "ticker": "INTC",
+      "reported_weight_pct": "4.63"
+    },
+    {
+      "ticker": "CSCO",
+      "reported_weight_pct": "3.41"
+    },
+    {
+      "ticker": "AMAT",
+      "reported_weight_pct": "3.20"
+    },
+    {
+      "ticker": "JNJ",
+      "reported_weight_pct": "3.05"
+    },
+    {
+      "ticker": "SNDK",
+      "reported_weight_pct": "2.96"
+    },
+    {
+      "ticker": "PANW",
+      "reported_weight_pct": "2.68"
+    },
+    {
+      "ticker": "GOOGL",
+      "reported_weight_pct": "2.61"
+    },
+    {
+      "ticker": "LRCX",
+      "reported_weight_pct": "2.53"
+    }
+  ]
+}

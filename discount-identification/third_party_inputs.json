@@ -1,0 +1,124 @@
+{
+  "base": "experiments",
+  "files": [
+    {
+      "path": "paper_breakthrough_20261006/external/agents.py",
+      "sha256": "ff1341d06649fc5a64760f3d3f6b611f321e65068aed4fc9aaa7d19eb897fde5",
+      "bytes": 15154,
+      "source_url": "https://raw.githubusercontent.com/dynamic-trading-RL/dynamic-trading/718825316bc7569dab591fde95b1df8c13fa379b/dynamic_trading/benchmark_agents/agents.py",
+      "note": "Third-party original omitted from public bundle."
+    },
+    {
+      "path": "paper_breakthrough_20261006/external/assets_data.xlsx",
+      "sha256": "12d7c0d8d9e652cbf0fea4f18ffe29b620437e76552b9f18c5e6e0843258e32c",
+      "bytes": 2284323,
+      "source_url": "https://raw.githubusercontent.com/dynamic-trading-RL/dynamic-trading/718825316bc7569dab591fde95b1df8c13fa379b/resources/data/data_source/market_data/assets_data.xlsx",
+      "note": "Third-party original omitted from public bundle."
+    },
+    {
+      "path": "paper_breakthrough_20261006/external/BRENT_EIA.csv",
+      "sha256": "c3c31ff06cb0738cc028130818f629de60ecb072277b0a79f89d063acc9e2d74",
+      "bytes": 90216,
+      "source_url": "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls",
+      "note": "Derived EIA CSV must match the archived extraction; current downloads may differ."
+    },
+    {
+      "path": "paper_breakthrough_20261006/external/BRENT_EIA.xls",
+      "sha256": "bf3da33d21e30b387cc543bb1d6690d123ffd9b196f37cabd8624e9f9c08ecd1",
+      "bytes": 452096,
+      "source_url": "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls",
+      "note": "Third-party original omitted from public bundle."
+    },
+    {
+      "path": "paper_breakthrough_20261006/external/BRENT_EIA_full.csv",
+      "sha256": "1d7107f9b59b28ca39a86977b0b75908f25eb9aa2becf481061dff41296c4398",
+      "bytes": 110038,
+      "source_url": "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls",
+      "note": "Derived EIA CSV must match the archived extraction; current downloads may differ."
+    },
+    {
+      "path": "paper_breakthrough_20261006/external/calibrator.py",
+      "sha256": "0df856ee5ae37698c50ee41e78cbd6851226f9c981db9f67867c96d1cda0b5d8",
+      "bytes": 37731,
+      "source_url": "https://raw.githubusercontent.com/dynamic-trading-RL/dynamic-trading/718825316bc7569dab591fde95b1df8c13fa379b/dynamic_trading/market_utils/calibrator.py",
+      "note": "Third-party original omitted from public bundle."
+    },
+    {
+      "path": "paper_breakthrough_20261006/external/commodities-summary-statistics.xlsx",
+      "sha256": "bc8aafda9b586e68be322194dc7ae8d18efa1feedd6da704b4ef094b35cf6ea4",
+      "bytes": 15265,
+      "source_url": "https://raw.githubusercontent.com/dynamic-trading-RL/dynamic-trading/718825316bc7569dab591fde95b1df8c13fa379b/resources/data/data_source/market_data/commodities-summary-statistics.xlsx",
+      "note": "Third-party original omitted from public bundle."
+    },
+    {
+      "path": "paper_breakthrough_20261006/external/financial_time_series.py",
+      "sha256": "8416de4f50ece6ffa67eebc224188c4016dfde5169332875bf7b3c3a205e1ee9",
+      "bytes": 11031,
+      "source_url": "https://raw.githubusercontent.com/dynamic-trading-RL/dynamic-trading/718825316bc7569dab591fde95b1df8c13fa379b/dynamic_trading/market_utils/financial_time_series.py",
+      "note": "Third-party original omitted from public bundle."
+    },
+    {
+      "path": "paper_breakthrough_20261006/external/HENRY_EIA.csv",
+      "sha256": "c314c6aa28f3949d89da4591bb6e27ed00bd3f9d74264ecc2527ba4064c53a20",
+      "bytes": 69924,
+      "source_url": "https://www.eia.gov/dnav/ng/hist_xls/RNGWHHDd.xls",
+      "note": "Derived EIA CSV must match the archived extraction; current downloads may differ."
+    },
+    {
+      "path": "paper_breakthrough_20261006/external/HENRY_EIA.xls",
+      "sha256": "8e1a3202a31c4b4d98be1341d0a6e8478c7c1d2c71ab9353e602bce8f4d8cfd7",
+      "bytes": 294912,
+      "source_url": "https://www.eia.gov/dnav/ng/hist_xls/RNGWHHDd.xls",
+      "note": "Third-party original omitted from public bundle."
+    },
+    {
+      "path": "paper_breakthrough_20261006/external/HENRY_EIA_full.csv",
+      "sha256": "e78d0dad9e708213e593306e46f684805772a11136c8f33fb7c1ceaf960e3868",
+      "bytes": 88193,
+      "source_url": "https://www.eia.gov/dnav/ng/hist_xls/RNGWHHDd.xls",
+      "note": "Derived EIA CSV must match the archived extraction; current downloads may differ."
+    },
+    {
+      "path": "paper_breakthrough_20261006/external/settings.csv",
+      "sha256": "45a96c365c3b014bc8c28233774bf5c6c40ddf54852d83f09401f4e9f0f3d0fd",
+      "bytes": 1045,
+      "source_url": "https://raw.githubusercontent.com/dynamic-trading-RL/dynamic-trading/718825316bc7569dab591fde95b1df8c13fa379b/resources/data/data_source/settings.csv",
+      "note": "Third-party original omitted from public bundle."
+    },
+    {
+      "path": "paper_breakthrough_20261006/external/WTI_EIA.csv",
+      "sha256": "10bc70151ca316fc4e112deafd4ca3190276aa3ec697d68208595b99e29ca553",
+      "bytes": 86296,
+      "source_url": "https://www.eia.gov/dnav/pet/hist_xls/RWTCd.xls",
+      "note": "Derived EIA CSV must match the archived extraction; current downloads may differ."
+    },
+    {
+      "path": "paper_breakthrough_20261006/external/WTI_EIA.xls",
+      "sha256": "60b717dd40815cb5e482ddcf115662a028cefd47d9f495e67d110eae00f7e421",
+      "bytes": 471040,
+      "source_url": "https://www.eia.gov/dnav/pet/hist_xls/RWTCd.xls",
+      "note": "Third-party original omitted from public bundle."
+    },
+    {
+      "path": "paper_breakthrough_20261006/external/WTI_EIA_full.csv",
+      "sha256": "10d860165000ac003d2e85805a432adaf4f34003c9e4c46ff64ae8ba7a6b86d0",
+      "bytes": 105794,
+      "source_url": "https://www.eia.gov/dnav/pet/hist_xls/RWTCd.xls",
+      "note": "Derived EIA CSV must match the archived extraction; current downloads may differ."
+    },
+    {
+      "path": "public_audit_20261006/MTUM_latest.csv",
+      "sha256": "638ace8b88416d578df934319eb0d1e7d8b8c9d413ec3638109188b48e1361af",
+      "bytes": 21206,
+      "source_url": "https://www.ishares.com/us/products/251614/ishares-msci-usa-momentum-factor-etf/latest-holdings.csv",
+      "note": "Dated snapshot; current endpoint is not guaranteed to return the archived bytes."
+    },
+    {
+      "path": "public_audit_20261006/ishares_product.html",
+      "sha256": "3b39010bc4996f3d4bfb7a40cfde882712efe7b7626915049653f48a4fd56f5e",
+      "bytes": 1704129,
+      "source_url": "https://www.ishares.com/us/products/251614/ishares-msci-usa-momentum-factor-etf",
+      "note": "Dated snapshot; current endpoint is not guaranteed to return the archived bytes."
+    }
+  ]
+}

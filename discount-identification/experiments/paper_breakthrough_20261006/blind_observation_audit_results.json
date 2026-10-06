@@ -1,0 +1,107 @@
+{
+  "input_sha256": "b2087c9b23d53fd27c2e9b578601f49d93eac09b1d5370ae97111e56bd53455b",
+  "audits": [
+    {
+      "label": "configured_clock",
+      "parameter_order": [
+        "alpha/reference_cost",
+        "beta",
+        "cost_ratio_B",
+        "cost_ratio_C"
+      ],
+      "point": [
+        0.06666011041992913,
+        0.9998996675350246,
+        1.99999999033661,
+        3.999999960333821
+      ],
+      "certificate": {
+        "beta_interval": [
+          0.9993745929575433,
+          1.0
+        ],
+        "informative": true,
+        "inverse_defect": 0.00022128253885977958,
+        "vector_radius": 0.0005173189308979939,
+        "selected_rows": [
+          3,
+          10,
+          1,
+          24,
+          30
+        ],
+        "normalized_vector": [
+          0.033331350369732206,
+          0.027408817476908664,
+          0.9794028144772073,
+          0.9998919118884414,
+          0.9792994736805781
+        ],
+        "beta": 0.9998919118884414,
+        "bound_half_width": 1.1e-12
+      },
+      "clock_cut": 0.99,
+      "action": "accept",
+      "private_costs_or_targets_read": false,
+      "pencil_singular_values": [
+        0.00036586466783738954,
+        3.3750086349200746e-05,
+        1.3606676686213011e-05,
+        4.036183954643673e-06,
+        6.6712237271391805e-09,
+        2.3752023954476372e-14
+      ]
+    },
+    {
+      "label": "short_clock",
+      "parameter_order": [
+        "alpha/reference_cost",
+        "beta",
+        "cost_ratio_B",
+        "cost_ratio_C"
+      ],
+      "point": [
+        0.06668121401432006,
+        0.7998990215387913,
+        1.9999998947464288,
+        3.9999996209137527
+      ],
+      "certificate": {
+        "beta_interval": [
+          0.6964030110498315,
+          0.9021109945844844
+        ],
+        "informative": true,
+        "inverse_defect": 0.07452487456612315,
+        "vector_radius": 0.10285399176732639,
+        "selected_rows": [
+          4,
+          13,
+          1,
+          30,
+          8
+        ],
+        "normalized_vector": [
+          0.03340805978728706,
+          0.025610876831393833,
+          1.1038917650482956,
+          0.799257002817158,
+          0.882424366907751
+        ],
+        "beta": 0.799257002817158,
+        "bound_half_width": 1.1e-12
+      },
+      "clock_cut": 0.99,
+      "action": "fail_clock",
+      "private_costs_or_targets_read": false,
+      "pencil_singular_values": [
+        0.00037544725656838107,
+        4.2804307925613195e-05,
+        7.53706893567746e-06,
+        1.4671361894495843e-06,
+        2.981110841623008e-11,
+        1.4656164698972108e-14
+      ]
+    }
+  ]
+}

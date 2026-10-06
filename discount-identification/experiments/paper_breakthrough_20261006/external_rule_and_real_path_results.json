@@ -1,0 +1,1832 @@
+{
+  "commit": "718825316bc7569dab591fde95b1df8c13fa379b",
+  "source_repository": "https://github.com/dynamic-trading-RL/dynamic-trading",
+  "external_files_sha256": {
+    "agents.py": "ff1341d06649fc5a64760f3d3f6b611f321e65068aed4fc9aaa7d19eb897fde5",
+    "assets_data.xlsx": "12d7c0d8d9e652cbf0fea4f18ffe29b620437e76552b9f18c5e6e0843258e32c",
+    "BRENT_EIA.csv": "c3c31ff06cb0738cc028130818f629de60ecb072277b0a79f89d063acc9e2d74",
+    "BRENT_EIA.xls": "bf3da33d21e30b387cc543bb1d6690d123ffd9b196f37cabd8624e9f9c08ecd1",
+    "BRENT_EIA_full.csv": "1d7107f9b59b28ca39a86977b0b75908f25eb9aa2becf481061dff41296c4398",
+    "calibrator.py": "0df856ee5ae37698c50ee41e78cbd6851226f9c981db9f67867c96d1cda0b5d8",
+    "commit.txt": "9549a53a73d0fcd51dc66e127c751f711f23712865e3a4b226037e44d408c343",
+    "commodities-summary-statistics.xlsx": "bc8aafda9b586e68be322194dc7ae8d18efa1feedd6da704b4ef094b35cf6ea4",
+    "eia_source_manifest.json": "c2dc54610443aa8b4aea2adea395add5d9a5587fc91161b36cae73a96d3e1ec0",
+    "financial_time_series.py": "8416de4f50ece6ffa67eebc224188c4016dfde5169332875bf7b3c3a205e1ee9",
+    "HENRY_EIA.csv": "c314c6aa28f3949d89da4591bb6e27ed00bd3f9d74264ecc2527ba4064c53a20",
+    "HENRY_EIA.xls": "8e1a3202a31c4b4d98be1341d0a6e8478c7c1d2c71ab9353e602bce8f4d8cfd7",
+    "HENRY_EIA_full.csv": "e78d0dad9e708213e593306e46f684805772a11136c8f33fb7c1ceaf960e3868",
+    "settings.csv": "45a96c365c3b014bc8c28233774bf5c6c40ddf54852d83f09401f4e9f0f3d0fd",
+    "tree.json": "22ba94021b1721bd0930cf59f23dd311bcd4d14d44affc9c847e7c258ef72af3",
+    "WTI_EIA.csv": "10bc70151ca316fc4e112deafd4ca3190276aa3ec697d68208595b99e29ca553",
+    "WTI_EIA.xls": "60b717dd40815cb5e482ddcf115662a028cefd47d9f495e67d110eae00f7e421",
+    "WTI_EIA_full.csv": "10d860165000ac003d2e85805a432adaf4f34003c9e4c46ff64ae8ba7a6b86d0"
+  },
+  "horizons": [
+    5,
+    20,
+    60
+  ],
+  "weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "task_clock": 0.9999,
+  "policy_mapping": "paper alpha=external risk_aversion*gamma*constant_variance; paper cost=external lam*constant_variance",
+  "replay_normalization": "constant_variance=1; costs relative to deployment lam; risk_aversion compensated to keep paper alpha fixed",
+  "all_configured_matched_assets": 14,
+  "assets": [
+    {
+      "ticker": "WTI",
+      "external_risk_to_cost_ratio": 0.06666666666666667,
+      "alpha": 0.06666,
+      "configuration": {
+        "Commodity": "WTI",
+        "Average Price Per Contract": 69.178313731986,
+        "Standard Deviation of Price Changes": 1.28609181082494,
+        "Contract Multiplier": 1,
+        "Daily Trading Volume (Contracts)": 151.16,
+        "lam": 0.034803427326473416,
+        "kappa": 0.002320228488431561
+      },
+      "chronological_split": {
+        "train_days": 3521,
+        "test_days": 1509,
+        "train_scale": 1.557590828322078,
+        "train_center": 0.006725362113036071,
+        "start": "2002-05-24T00:00:00",
+        "end": "2022-05-23T00:00:00",
+        "test_start": "2016-05-26T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": -0.052069189837493424,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2016": 0.0009247000295936099,
+          "2017": 0.0005177681548444221,
+          "2018": 0.001107067647641294,
+          "2019": 0.0010493952560937626,
+          "2020": 0.002172467287663572,
+          "2021": 0.0016941855129444666,
+          "2022": 0.011150825366292135
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.002009099539456324,
+          "median_loss": 0.0005088785247796826,
+          "worst_loss": 0.09018025464525627,
+          "observations": 1509
+        },
+        "0.6": {
+          "mean_loss": 0.001964097839406615,
+          "median_loss": 0.0004958019265758742,
+          "worst_loss": 0.08672350401609169,
+          "observations": 1509
+        },
+        "0.8": {
+          "mean_loss": 0.0019204112393802946,
+          "median_loss": 0.00046844835650571975,
+          "worst_loss": 0.08669284260269329,
+          "observations": 1509
+        },
+        "0.95": {
+          "mean_loss": 0.0019086247824459481,
+          "median_loss": 0.0004706571695900863,
+          "worst_loss": 0.0884223998875408,
+          "observations": 1509
+        },
+        "0.99": {
+          "mean_loss": 0.0019089828275519127,
+          "median_loss": 0.0004708245834703888,
+          "worst_loss": 0.08892618315832852,
+          "observations": 1509
+        },
+        "0.9999": {
+          "mean_loss": 0.0019092910899637294,
+          "median_loss": 0.00047278778280872085,
+          "worst_loss": 0.0890519366890408,
+          "observations": 1509
+        }
+      },
+      "improvement_vs_045": 0.04967820037408577,
+      "improvement_vs_099": -0.0001614799291893565
+    },
+    {
+      "ticker": "WTI-spot",
+      "external_risk_to_cost_ratio": 0.06666666666666667,
+      "alpha": 0.06666,
+      "configuration": {
+        "Commodity": "WTI-spot",
+        "Average Price Per Contract": null,
+        "Standard Deviation of Price Changes": null,
+        "Contract Multiplier": null,
+        "Daily Trading Volume (Contracts)": null,
+        "lam": 0.015,
+        "kappa": 0.001
+      },
+      "chronological_split": {
+        "train_days": 5825,
+        "test_days": 2497,
+        "train_scale": 1.0138198103635956,
+        "train_center": 0.002628326180257511,
+        "start": "1986-01-02T00:00:00",
+        "end": "2019-01-07T00:00:00",
+        "test_start": "2009-02-04T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": -0.050639311640972635,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2009": 0.0052624904233082755,
+          "2010": 0.004282530763484425,
+          "2011": 0.008292981746895568,
+          "2012": 0.003655194031257355,
+          "2013": 0.00258594129834501,
+          "2014": 0.003242952205205024,
+          "2015": 0.0033618625557642026,
+          "2016": 0.0026444616930783064,
+          "2017": 0.0012191593621563275,
+          "2018": 0.0029607489650448756,
+          "2019": 0.0036719650956568155
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.003994624348477774,
+          "median_loss": 0.0016413190517219826,
+          "worst_loss": 0.16180373308450952,
+          "observations": 2497
+        },
+        "0.6": {
+          "mean_loss": 0.0038918147217533333,
+          "median_loss": 0.0015668939281584342,
+          "worst_loss": 0.1592012295731853,
+          "observations": 2497
+        },
+        "0.8": {
+          "mean_loss": 0.0037803395235955547,
+          "median_loss": 0.0014995724699645853,
+          "worst_loss": 0.1560459322991521,
+          "observations": 2497
+        },
+        "0.95": {
+          "mean_loss": 0.0037418217003791655,
+          "median_loss": 0.0015072679165457242,
+          "worst_loss": 0.15382089914113808,
+          "observations": 2497
+        },
+        "0.99": {
+          "mean_loss": 0.003740196324612418,
+          "median_loss": 0.0015169256227310238,
+          "worst_loss": 0.15323052329800468,
+          "observations": 2497
+        },
+        "0.9999": {
+          "mean_loss": 0.003740364402352551,
+          "median_loss": 0.0015180546623481304,
+          "worst_loss": 0.15308448502532304,
+          "observations": 2497
+        }
+      },
+      "improvement_vs_045": 0.06365052729479148,
+      "improvement_vs_099": -4.493821327700154e-05
+    },
+    {
+      "ticker": "cocoa",
+      "external_risk_to_cost_ratio": 0.06666666666666667,
+      "alpha": 0.06666,
+      "configuration": {
+        "Commodity": "cocoa",
+        "Average Price Per Contract": 2459.8180719061,
+        "Standard Deviation of Price Changes": 35.9873564053013,
+        "Contract Multiplier": 1,
+        "Daily Trading Volume (Contracts)": 5320,
+        "lam": 4.49080644179338e-05,
+        "kappa": 2.9938709611955865e-06
+      },
+      "chronological_split": {
+        "train_days": 3558,
+        "test_days": 1526,
+        "train_scale": 43.78376850388465,
+        "train_center": 0.3537569261331422,
+        "start": "2002-05-24T00:00:00",
+        "end": "2022-05-23T00:00:00",
+        "test_start": "2016-05-20T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": 0.03139274591361081,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2016": 0.0020578075941547628,
+          "2017": 0.0014798716662862681,
+          "2018": 0.001829780550760165,
+          "2019": 0.0016072451888832445,
+          "2020": 0.0022417339726103153,
+          "2021": 0.0013148254399602641,
+          "2022": 0.0014593798685067574
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.0018929478117278467,
+          "median_loss": 0.0008068681658277967,
+          "worst_loss": 0.030477489003917554,
+          "observations": 1526
+        },
+        "0.6": {
+          "mean_loss": 0.0018310927755619305,
+          "median_loss": 0.0007699142257430191,
+          "worst_loss": 0.030240556213956955,
+          "observations": 1526
+        },
+        "0.8": {
+          "mean_loss": 0.0017567719033851352,
+          "median_loss": 0.0007327687883175455,
+          "worst_loss": 0.030177077636687723,
+          "observations": 1526
+        },
+        "0.95": {
+          "mean_loss": 0.001723259622006337,
+          "median_loss": 0.0007248976391385235,
+          "worst_loss": 0.030062937765400723,
+          "observations": 1526
+        },
+        "0.99": {
+          "mean_loss": 0.0017189541256726346,
+          "median_loss": 0.0007187463003118651,
+          "worst_loss": 0.03001998542096735,
+          "observations": 1526
+        },
+        "0.9999": {
+          "mean_loss": 0.001718201051199803,
+          "median_loss": 0.0007228148700649971,
+          "worst_loss": 0.030008276771760285,
+          "observations": 1526
+        }
+      },
+      "improvement_vs_045": 0.09231462137803903,
+      "improvement_vs_099": 0.000438100389989704
+    },
+    {
+      "ticker": "coffee",
+      "external_risk_to_cost_ratio": 0.06666666666666667,
+      "alpha": 0.06666,
+      "configuration": {
+        "Commodity": "coffee",
+        "Average Price Per Contract": 1771.55670977316,
+        "Standard Deviation of Price Changes": 24.320464537656,
+        "Contract Multiplier": 1,
+        "Daily Trading Volume (Contracts)": 0.1504,
+        "lam": 2.50493443099599,
+        "kappa": 0.166995628733066
+      },
+      "chronological_split": {
+        "train_days": 2562,
+        "test_days": 1098,
+        "train_scale": 31.020849364786514,
+        "train_center": -0.10889929742388758,
+        "start": "2008-01-11T00:00:00",
+        "end": "2022-05-23T00:00:00",
+        "test_start": "2018-01-22T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": 0.06368857118917723,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2018": 0.0009461485553678607,
+          "2019": 0.0008160211919089939,
+          "2020": 0.0007809419350028313,
+          "2021": 0.00171039771399496,
+          "2022": 0.0021710292117393917
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.0012199065400507283,
+          "median_loss": 0.00045042550585183043,
+          "worst_loss": 0.03719721191626716,
+          "observations": 1098
+        },
+        "0.6": {
+          "mean_loss": 0.0011950745174577064,
+          "median_loss": 0.00043201117662509025,
+          "worst_loss": 0.037635685602115644,
+          "observations": 1098
+        },
+        "0.8": {
+          "mean_loss": 0.0011696143294385884,
+          "median_loss": 0.0004240994240294605,
+          "worst_loss": 0.03799755286882207,
+          "observations": 1098
+        },
+        "0.95": {
+          "mean_loss": 0.001162082358167569,
+          "median_loss": 0.0004206276303743716,
+          "worst_loss": 0.03810397681188621,
+          "observations": 1098
+        },
+        "0.99": {
+          "mean_loss": 0.0011621154476734836,
+          "median_loss": 0.00042227799609461975,
+          "worst_loss": 0.03811524691674843,
+          "observations": 1098
+        },
+        "0.9999": {
+          "mean_loss": 0.001162253980024403,
+          "median_loss": 0.0004237469011613526,
+          "worst_loss": 0.0381172206518673,
+          "observations": 1098
+        }
+      },
+      "improvement_vs_045": 0.047259817152818795,
+      "improvement_vs_099": -0.00011920704711121388
+    },
+    {
+      "ticker": "copper",
+      "external_risk_to_cost_ratio": 0.06666666666666667,
+      "alpha": 0.06666,
+      "configuration": {
+        "Commodity": "copper",
+        "Average Price Per Contract": 6495.47187535572,
+        "Standard Deviation of Price Changes": 71.3586619320315,
+        "Contract Multiplier": 1,
+        "Daily Trading Volume (Contracts)": 492,
+        "lam": 0.00032612574148592786,
+        "kappa": 2.1741716099061858e-05
+      },
+      "chronological_split": {
+        "train_days": 1892,
+        "test_days": 811,
+        "train_scale": 87.11757452149463,
+        "train_center": -1.2216173361522196,
+        "start": "2011-09-09T00:00:00",
+        "end": "2022-05-23T00:00:00",
+        "test_start": "2019-03-06T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": -0.05632353631681831,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2019": 0.0006317658064309145,
+          "2020": 0.001724823146183959,
+          "2021": 0.006418643073366997,
+          "2022": 0.004563408815101144
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.0034016717166508383,
+          "median_loss": 0.0008019756431200772,
+          "worst_loss": 0.2529364351077284,
+          "observations": 811
+        },
+        "0.6": {
+          "mean_loss": 0.0033366493036429915,
+          "median_loss": 0.0007611797981810027,
+          "worst_loss": 0.24833137760263457,
+          "observations": 811
+        },
+        "0.8": {
+          "mean_loss": 0.0032670858276110655,
+          "median_loss": 0.0007402245225547951,
+          "worst_loss": 0.24422670824641385,
+          "observations": 811
+        },
+        "0.95": {
+          "mean_loss": 0.003244874908124055,
+          "median_loss": 0.0007166794503237429,
+          "worst_loss": 0.24373313329941254,
+          "observations": 811
+        },
+        "0.99": {
+          "mean_loss": 0.003244511342375278,
+          "median_loss": 0.0007125310717615185,
+          "worst_loss": 0.2440331919068625,
+          "observations": 811
+        },
+        "0.9999": {
+          "mean_loss": 0.00324477966791605,
+          "median_loss": 0.0007150170572660498,
+          "worst_loss": 0.24413436334939645,
+          "observations": 811
+        }
+      },
+      "improvement_vs_045": 0.0461220428669874,
+      "improvement_vs_099": -8.270137239696496e-05
+    },
+    {
+      "ticker": "gasoil",
+      "external_risk_to_cost_ratio": 0.06666666666666667,
+      "alpha": 0.06666,
+      "configuration": {
+        "Commodity": "gasoil",
+        "Average Price Per Contract": 19141.5570364238,
+        "Standard Deviation of Price Changes": 857.751595388956,
+        "Contract Multiplier": 1,
+        "Daily Trading Volume (Contracts)": 372.6,
+        "lam": 8.78302691419443e-06,
+        "kappa": 5.85535127612962e-07
+      },
+      "chronological_split": {
+        "train_days": 3599,
+        "test_days": 1543,
+        "train_scale": 1128.0195494829873,
+        "train_center": -5.468532925812726,
+        "start": "2002-05-24T00:00:00",
+        "end": "2022-05-23T00:00:00",
+        "test_start": "2016-06-02T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": 0.012989575858688868,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2016": 2.384658761967175e-07,
+          "2017": 1.8008431175586097e-07,
+          "2018": 2.173123037395439e-07,
+          "2019": 2.3946152888730707e-07,
+          "2020": 2.9156066691129456e-07,
+          "2021": 3.0981181080720397e-07,
+          "2022": 9.01678075809471e-06
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 7.480884349057703e-07,
+          "median_loss": 7.235125326590012e-08,
+          "worst_loss": 0.00023100857742403808,
+          "observations": 1543
+        },
+        "0.6": {
+          "mean_loss": 7.536735463208377e-07,
+          "median_loss": 8.400104734075795e-08,
+          "worst_loss": 0.00023533326127839213,
+          "observations": 1543
+        },
+        "0.8": {
+          "mean_loss": 7.751918968695762e-07,
+          "median_loss": 1.1191469164645724e-07,
+          "worst_loss": 0.00023911227693520907,
+          "observations": 1543
+        },
+        "0.95": {
+          "mean_loss": 8.036119484223603e-07,
+          "median_loss": 1.4553974182086114e-07,
+          "worst_loss": 0.00023873502911971191,
+          "observations": 1543
+        },
+        "0.99": {
+          "mean_loss": 8.127786521175789e-07,
+          "median_loss": 1.5592728755172592e-07,
+          "worst_loss": 0.00023802176589423954,
+          "observations": 1543
+        },
+        "0.9999": {
+          "mean_loss": 8.151336980524991e-07,
+          "median_loss": 1.5904058840063779e-07,
+          "worst_loss": 0.00023780446951823767,
+          "observations": 1543
+        }
+      },
+      "improvement_vs_045": -0.08962210885558441,
+      "improvement_vs_099": -0.002897524349076308
+    },
+    {
+      "ticker": "gold",
+      "external_risk_to_cost_ratio": 0.06666666666666667,
+      "alpha": 0.06666,
+      "configuration": {
+        "Commodity": "gold",
+        "Average Price Per Contract": 42.3601016949152,
+        "Standard Deviation of Price Changes": 0.41451292623219094,
+        "Contract Multiplier": 1,
+        "Daily Trading Volume (Contracts)": 987,
+        "lam": 0.03141930371102403,
+        "kappa": 0.002094620247401602
+      },
+      "chronological_split": {
+        "train_days": 2380,
+        "test_days": 1020,
+        "train_scale": 0.5228516898037067,
+        "train_center": 0.0049159663865546216,
+        "start": "2008-01-09T00:00:00",
+        "end": "2022-05-24T00:00:00",
+        "test_start": "2018-03-12T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": -0.04764135453102672,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2018": 0.0005318513798749857,
+          "2019": 0.000999761474045869,
+          "2020": 0.0032841328678996397,
+          "2021": 0.0018636182142361176,
+          "2022": 0.00248549098413033
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.0018786835685917682,
+          "median_loss": 0.00039181409102196903,
+          "worst_loss": 0.1109413739783927,
+          "observations": 1020
+        },
+        "0.6": {
+          "mean_loss": 0.0018455239781322882,
+          "median_loss": 0.0003690578005562724,
+          "worst_loss": 0.11003024000249234,
+          "observations": 1020
+        },
+        "0.8": {
+          "mean_loss": 0.0018085715734637694,
+          "median_loss": 0.00034141408399160334,
+          "worst_loss": 0.10949490504603553,
+          "observations": 1020
+        },
+        "0.95": {
+          "mean_loss": 0.0017931167197282564,
+          "median_loss": 0.00034384755118549144,
+          "worst_loss": 0.10976619233766105,
+          "observations": 1020
+        },
+        "0.99": {
+          "mean_loss": 0.0017913297993274225,
+          "median_loss": 0.00034439955721856795,
+          "worst_loss": 0.10991512794761618,
+          "observations": 1020
+        },
+        "0.9999": {
+          "mean_loss": 0.0017910425654678072,
+          "median_loss": 0.00034911277746767254,
+          "worst_loss": 0.10995512619973505,
+          "observations": 1020
+        }
+      },
+      "improvement_vs_045": 0.0466502207126106,
+      "improvement_vs_099": 0.00016034672103548697
+    },
+    {
+      "ticker": "lead",
+      "external_risk_to_cost_ratio": 0.06666666666666667,
+      "alpha": 0.06666,
+      "configuration": {
+        "Commodity": "lead",
+        "Average Price Per Contract": 2390.35292785192,
+        "Standard Deviation of Price Changes": 20.8737072121418,
+        "Contract Multiplier": 1,
+        "Daily Trading Volume (Contracts)": 100.8,
+        "lam": 0.006845973159814987,
+        "kappa": 0.00045639821065433247
+      },
+      "chronological_split": {
+        "train_days": 1899,
+        "test_days": 814,
+        "train_scale": 26.589805877307143,
+        "train_center": -0.13175395395063724,
+        "start": "2011-03-24T00:00:00",
+        "end": "2022-05-24T00:00:00",
+        "test_start": "2019-01-11T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": 0.14579216932501304,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2019": 0.0011528660332265318,
+          "2020": 0.0020317716827754377,
+          "2021": 0.0018584472394141671,
+          "2022": 0.001744262586900768
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.0018335605942859138,
+          "median_loss": 0.0007866547314843355,
+          "worst_loss": 0.048091748376268034,
+          "observations": 814
+        },
+        "0.6": {
+          "mean_loss": 0.0017925878590276138,
+          "median_loss": 0.0007567425556060573,
+          "worst_loss": 0.04873489966216827,
+          "observations": 814
+        },
+        "0.8": {
+          "mean_loss": 0.0017355924750651016,
+          "median_loss": 0.0007320677651870106,
+          "worst_loss": 0.049255853088648674,
+          "observations": 814
+        },
+        "0.95": {
+          "mean_loss": 0.0017004431490364052,
+          "median_loss": 0.0007022228144016058,
+          "worst_loss": 0.04922471705993969,
+          "observations": 814
+        },
+        "0.99": {
+          "mean_loss": 0.001693512678776581,
+          "median_loss": 0.0006975607146391465,
+          "worst_loss": 0.04914920418437284,
+          "observations": 814
+        },
+        "0.9999": {
+          "mean_loss": 0.0016919905938264522,
+          "median_loss": 0.0006966034992248668,
+          "worst_loss": 0.04912654815066396,
+          "observations": 814
+        }
+      },
+      "improvement_vs_045": 0.07721042920569332,
+      "improvement_vs_099": 0.0008987738735020123
+    },
+    {
+      "ticker": "nat-gas-reuter",
+      "external_risk_to_cost_ratio": 0.06666666666666667,
+      "alpha": 0.06666,
+      "configuration": {
+        "Commodity": "nat-gas-reuter",
+        "Average Price Per Contract": 4.61394960212201,
+        "Standard Deviation of Price Changes": 0.144193047550023,
+        "Contract Multiplier": 1,
+        "Daily Trading Volume (Contracts)": 4.612,
+        "lam": 6.052402158718144,
+        "kappa": 0.40349347724787626
+      },
+      "chronological_split": {
+        "train_days": 3521,
+        "test_days": 1510,
+        "train_scale": 0.20109474382323317,
+        "train_center": -0.00039307015052541877,
+        "start": "2002-05-24T00:00:00",
+        "end": "2022-05-24T00:00:00",
+        "test_start": "2016-05-27T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": -0.01973880570725541,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2016": 0.00041193767081224676,
+          "2017": 0.00027003286905982716,
+          "2018": 0.0005669464566428348,
+          "2019": 0.00027222288266871776,
+          "2020": 0.00038817356916152424,
+          "2021": 0.0011437823413050971,
+          "2022": 0.00545372380534467
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.0008535385271165336,
+          "median_loss": 0.00014524890871462606,
+          "worst_loss": 0.14352842772633098,
+          "observations": 1510
+        },
+        "0.6": {
+          "mean_loss": 0.0008441686964048837,
+          "median_loss": 0.00013669193944427387,
+          "worst_loss": 0.14427352444215413,
+          "observations": 1510
+        },
+        "0.8": {
+          "mean_loss": 0.0008372052066190484,
+          "median_loss": 0.00013026415875103567,
+          "worst_loss": 0.14649820938302363,
+          "observations": 1510
+        },
+        "0.95": {
+          "mean_loss": 0.0008381195953785749,
+          "median_loss": 0.0001261975506345946,
+          "worst_loss": 0.14849121336596963,
+          "observations": 1510
+        },
+        "0.99": {
+          "mean_loss": 0.0008392719041193136,
+          "median_loss": 0.00012553810836912044,
+          "worst_loss": 0.14895441017718514,
+          "observations": 1510
+        },
+        "0.9999": {
+          "mean_loss": 0.0008396100871980462,
+          "median_loss": 0.00012610865525405674,
+          "worst_loss": 0.1490610724902147,
+          "observations": 1510
+        }
+      },
+      "improvement_vs_045": 0.01631846656710534,
+      "improvement_vs_099": -0.00040294817099528757
+    },
+    {
+      "ticker": "nickel",
+      "external_risk_to_cost_ratio": 0.06666666666666667,
+      "alpha": 0.06666,
+      "configuration": {
+        "Commodity": "nickel",
+        "Average Price Per Contract": 14828.5271089242,
+        "Standard Deviation of Price Changes": 189.929768790768,
+        "Contract Multiplier": 1,
+        "Daily Trading Volume (Contracts)": 323.3333333333333,
+        "lam": 0.0001599168874052082,
+        "kappa": 1.066112582701388e-05
+      },
+      "chronological_split": {
+        "train_days": 1218,
+        "test_days": 523,
+        "train_scale": 217.44841094629373,
+        "train_center": -2.786218371815846,
+        "start": "2015-03-27T00:00:00",
+        "end": "2022-05-24T00:00:00",
+        "test_start": "2020-03-26T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": 0.13156208734878913,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2020": 0.0022788291024896257,
+          "2021": 0.005756573080274621,
+          "2022": 0.08650002237699692
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.01896347337959588,
+          "median_loss": 0.002467524533693108,
+          "worst_loss": 1.4761053974096852,
+          "observations": 523
+        },
+        "0.6": {
+          "mean_loss": 0.018798016166928642,
+          "median_loss": 0.0024653176076839703,
+          "worst_loss": 1.4681323479894977,
+          "observations": 523
+        },
+        "0.8": {
+          "mean_loss": 0.01863259776631848,
+          "median_loss": 0.002301958603889522,
+          "worst_loss": 1.4650159381499066,
+          "observations": 523
+        },
+        "0.95": {
+          "mean_loss": 0.018561392106560416,
+          "median_loss": 0.0022791356623398894,
+          "worst_loss": 1.4700707104502293,
+          "observations": 523
+        },
+        "0.99": {
+          "mean_loss": 0.01855088724279429,
+          "median_loss": 0.0022679654965465966,
+          "worst_loss": 1.47259409881794,
+          "observations": 523
+        },
+        "0.9999": {
+          "mean_loss": 0.01854884893916633,
+          "median_loss": 0.002278835591795425,
+          "worst_loss": 1.4732940409705442,
+          "observations": 523
+        }
+      },
+      "improvement_vs_045": 0.0218643722133558,
+      "improvement_vs_099": 0.00010987634183101669
+    },
+    {
+      "ticker": "silver",
+      "external_risk_to_cost_ratio": 0.06666666666666667,
+      "alpha": 0.06666,
+      "configuration": {
+        "Commodity": "silver",
+        "Average Price Per Contract": 652.732625189681,
+        "Standard Deviation of Price Changes": 8.42488369390273,
+        "Contract Multiplier": 1,
+        "Daily Trading Volume (Contracts)": 8.756,
+        "lam": 0.1321096708610766,
+        "kappa": 0.00880731139073844
+      },
+      "chronological_split": {
+        "train_days": 1708,
+        "test_days": 732,
+        "train_scale": 8.780502666773433,
+        "train_center": -0.26288056206088994,
+        "start": "2012-05-10T00:00:00",
+        "end": "2022-05-24T00:00:00",
+        "test_start": "2019-05-20T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": 0.02901466934628136,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2019": 0.0019988454435252785,
+          "2020": 0.009765025157115862,
+          "2021": 0.0044280950877464914,
+          "2022": 0.003896767872009068
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.006040887475586879,
+          "median_loss": 0.0016123611695439961,
+          "worst_loss": 0.1300474632457923,
+          "observations": 732
+        },
+        "0.6": {
+          "mean_loss": 0.005879346437307935,
+          "median_loss": 0.0015797056325043402,
+          "worst_loss": 0.12469955877700689,
+          "observations": 732
+        },
+        "0.8": {
+          "mean_loss": 0.005700770315294401,
+          "median_loss": 0.001457031649737755,
+          "worst_loss": 0.12000388039742549,
+          "observations": 732
+        },
+        "0.95": {
+          "mean_loss": 0.005628299131081262,
+          "median_loss": 0.0014222154107959648,
+          "worst_loss": 0.1184654158782981,
+          "observations": 732
+        },
+        "0.99": {
+          "mean_loss": 0.005620506824433816,
+          "median_loss": 0.0014184687364802104,
+          "worst_loss": 0.11849431268172361,
+          "observations": 732
+        },
+        "0.9999": {
+          "mean_loss": 0.005619337622405458,
+          "median_loss": 0.001416764192760234,
+          "worst_loss": 0.11850609879417381,
+          "observations": 732
+        }
+      },
+      "improvement_vs_045": 0.06978276865527389,
+      "improvement_vs_099": 0.0002080243054372044
+    },
+    {
+      "ticker": "sugar",
+      "external_risk_to_cost_ratio": 0.06666666666666667,
+      "alpha": 0.06666,
+      "configuration": {
+        "Commodity": "sugar",
+        "Average Price Per Contract": 429.127611322628,
+        "Standard Deviation of Price Changes": 6.90268837850327,
+        "Contract Multiplier": 1,
+        "Daily Trading Volume (Contracts)": 0.2294642857142857,
+        "lam": 4.9370519219536915,
+        "kappa": 0.32913679479691277
+      },
+      "chronological_split": {
+        "train_days": 3565,
+        "test_days": 1529,
+        "train_scale": 8.426932233493979,
+        "train_center": 0.08002805049088359,
+        "start": "2002-05-24T00:00:00",
+        "end": "2022-05-24T00:00:00",
+        "test_start": "2016-05-13T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": -0.010116576617251516,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2016": 0.001757440330732268,
+          "2017": 0.0011657666425796448,
+          "2018": 0.0007136359687426481,
+          "2019": 0.0005030617765137399,
+          "2020": 0.0011289939348031839,
+          "2021": 0.0015104462965421285,
+          "2022": 0.0017362496996841737
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.001212874488464221,
+          "median_loss": 0.0004773987189998569,
+          "worst_loss": 0.018706485406315577,
+          "observations": 1529
+        },
+        "0.6": {
+          "mean_loss": 0.001181522525433673,
+          "median_loss": 0.0004524708330893327,
+          "worst_loss": 0.018724119212193052,
+          "observations": 1529
+        },
+        "0.8": {
+          "mean_loss": 0.0011467835979020174,
+          "median_loss": 0.0004402510083044024,
+          "worst_loss": 0.018952149457452876,
+          "observations": 1529
+        },
+        "0.95": {
+          "mean_loss": 0.0011328806132040428,
+          "median_loss": 0.00044559833046559435,
+          "worst_loss": 0.019293130253224273,
+          "observations": 1529
+        },
+        "0.99": {
+          "mean_loss": 0.0011314686937186481,
+          "median_loss": 0.00043347039785523864,
+          "worst_loss": 0.01940118149163244,
+          "observations": 1529
+        },
+        "0.9999": {
+          "mean_loss": 0.0011312710130827845,
+          "median_loss": 0.00043292019493546626,
+          "worst_loss": 0.019428563674039275,
+          "observations": 1529
+        }
+      },
+      "improvement_vs_045": 0.06728105517724692,
+      "improvement_vs_099": 0.00017471153816361884
+    },
+    {
+      "ticker": "unleaded",
+      "external_risk_to_cost_ratio": 0.06666666666666667,
+      "alpha": 0.06666,
+      "configuration": {
+        "Commodity": "unleaded",
+        "Average Price Per Contract": 2.07548991765782,
+        "Standard Deviation of Price Changes": 0.0401932890377744,
+        "Contract Multiplier": 1,
+        "Daily Trading Volume (Contracts)": 0.2695238095238095,
+        "lam": 599.582944397009,
+        "kappa": 39.97219629313393
+      },
+      "chronological_split": {
+        "train_days": 2934,
+        "test_days": 1258,
+        "train_scale": 0.050020300006890124,
+        "train_center": -8.391274710293115e-05,
+        "start": "2005-10-03T00:00:00",
+        "end": "2022-05-24T00:00:00",
+        "test_start": "2017-05-30T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": -0.037310956527899196,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2017": 0.0014729096094569056,
+          "2018": 0.0008986488211775448,
+          "2019": 0.0010825835273821109,
+          "2020": 0.0020936606469116443,
+          "2021": 0.001531345612116455,
+          "2022": 0.008669966644635032
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.0020868040033948597,
+          "median_loss": 0.0005691252972640915,
+          "worst_loss": 0.0813596471418827,
+          "observations": 1258
+        },
+        "0.6": {
+          "mean_loss": 0.002040092709921322,
+          "median_loss": 0.0005396769901284552,
+          "worst_loss": 0.08206596572376504,
+          "observations": 1258
+        },
+        "0.8": {
+          "mean_loss": 0.0019935444473209683,
+          "median_loss": 0.0005221666395485601,
+          "worst_loss": 0.08335039416879564,
+          "observations": 1258
+        },
+        "0.95": {
+          "mean_loss": 0.001981385328077951,
+          "median_loss": 0.0005099728573451435,
+          "worst_loss": 0.08435962398111914,
+          "observations": 1258
+        },
+        "0.99": {
+          "mean_loss": 0.0019821638965055433,
+          "median_loss": 0.0005181840136473279,
+          "worst_loss": 0.08461748955598306,
+          "observations": 1258
+        },
+        "0.9999": {
+          "mean_loss": 0.0019826144109669555,
+          "median_loss": 0.0005189071690533012,
+          "worst_loss": 0.08468044244900688,
+          "observations": 1258
+        }
+      },
+      "improvement_vs_045": 0.049927828515953676,
+      "improvement_vs_099": -0.0002272841626298483
+    },
+    {
+      "ticker": "zinc",
+      "external_risk_to_cost_ratio": 0.06666666666666667,
+      "alpha": 0.06666,
+      "configuration": {
+        "Commodity": "zinc",
+        "Average Price Per Contract": 2691.34489138186,
+        "Standard Deviation of Price Changes": 29.7153194981712,
+        "Contract Multiplier": 1,
+        "Daily Trading Volume (Contracts)": 248,
+        "lam": 0.00154592968886277,
+        "kappa": 0.00010306197925751799
+      },
+      "chronological_split": {
+        "train_days": 2580,
+        "test_days": 1107,
+        "train_scale": 37.28718171203871,
+        "train_center": 0.06810964345733328,
+        "start": "2007-03-26T00:00:00",
+        "end": "2022-05-24T00:00:00",
+        "test_start": "2017-11-01T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": 0.134473535227323,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2017": 0.0020386506003431345,
+          "2018": 0.002888884122626437,
+          "2019": 0.0010478714264434631,
+          "2020": 0.0015012447752070321,
+          "2021": 0.003984106057712695,
+          "2022": 0.005211692637739547
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.0027706094317121017,
+          "median_loss": 0.0008777516627724041,
+          "worst_loss": 0.1602220053900102,
+          "observations": 1107
+        },
+        "0.6": {
+          "mean_loss": 0.0026983343082119093,
+          "median_loss": 0.0008646970521294161,
+          "worst_loss": 0.1580181966397792,
+          "observations": 1107
+        },
+        "0.8": {
+          "mean_loss": 0.002616068142248758,
+          "median_loss": 0.0008122994957776976,
+          "worst_loss": 0.15641212679931146,
+          "observations": 1107
+        },
+        "0.95": {
+          "mean_loss": 0.0025813624006790483,
+          "median_loss": 0.0008296674033213022,
+          "worst_loss": 0.15667914472074979,
+          "observations": 1107
+        },
+        "0.99": {
+          "mean_loss": 0.0025774375782064746,
+          "median_loss": 0.0008145618072363564,
+          "worst_loss": 0.1569879431001968,
+          "observations": 1107
+        },
+        "0.9999": {
+          "mean_loss": 0.002576825409303502,
+          "median_loss": 0.0008142377770338049,
+          "worst_loss": 0.15707934999194725,
+          "observations": 1107
+        }
+      },
+      "improvement_vs_045": 0.06994274262931766,
+      "improvement_vs_099": 0.00023751066103350205
+    }
+  ],
+  "primary_eia_results": [
+    {
+      "series": "WTI_EIA",
+      "source": {
+        "name": "WTI_EIA",
+        "series": "RWTC",
+        "url": "https://www.eia.gov/dnav/pet/hist_xls/RWTCd.xls",
+        "units": "USD/barrel",
+        "source_sheet": "Data 1",
+        "source_header": [
+          "Date",
+          "Cushing, OK WTI Spot Price FOB (Dollars per Barrel)"
+        ],
+        "source_valid_rows": 9512,
+        "source_invalid_rows": 0,
+        "source_first_date": "1986-01-02",
+        "source_last_date": "2026-09-29",
+        "selected_rows": 4794,
+        "selected_first": "2002-01-02",
+        "selected_last": "2022-05-23",
+        "raw_sha256": "60b717dd40815cb5e482ddcf115662a028cefd47d9f495e67d110eae00f7e421",
+        "csv_sha256": "10bc70151ca316fc4e112deafd4ca3190276aa3ec697d68208595b99e29ca553",
+        "full_csv_sha256": "10d860165000ac003d2e85805a432adaf4f34003c9e4c46ff64ae8ba7a6b86d0",
+        "full_rows": 5879
+      },
+      "chronological_split": {
+        "train_days": 3355,
+        "test_days": 1438,
+        "train_scale": 1.6190699405069726,
+        "train_center": 0.007701937406855441,
+        "start": "2002-01-02T00:00:00",
+        "end": "2022-05-23T00:00:00",
+        "test_start": "2016-08-26T00:00:00",
+        "negative_price_days": 1,
+        "training_ar1": -0.046564837099448336,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2016": 0.0008769812765560989,
+          "2017": 0.0004777166910941511,
+          "2018": 0.0011619651834263423,
+          "2019": 0.0009841898638529075,
+          "2020": 0.009597619642870222,
+          "2021": 0.001590048857312821,
+          "2022": 0.010392501250464835
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.0032156885156459725,
+          "observations": 1438
+        },
+        "0.6": {
+          "mean_loss": 0.003185134942784953,
+          "observations": 1438
+        },
+        "0.8": {
+          "mean_loss": 0.0031653053271392204,
+          "observations": 1438
+        },
+        "0.95": {
+          "mean_loss": 0.003171105558913766,
+          "observations": 1438
+        },
+        "0.99": {
+          "mean_loss": 0.0031754928998546763,
+          "observations": 1438
+        },
+        "0.9999": {
+          "mean_loss": 0.003176737035800576,
+          "observations": 1438
+        }
+      },
+      "year_losses": {
+        "0.45": {
+          "2016": 0.0009615212583505574,
+          "2017": 0.0005318747129242987,
+          "2018": 0.0012193627964536327,
+          "2019": 0.0010745475806883604,
+          "2020": 0.00941208365457769,
+          "2021": 0.0016663184407003638,
+          "2022": 0.010655390770148682
+        },
+        "0.6": {
+          "2016": 0.0009343295860284054,
+          "2017": 0.0005151654066401338,
+          "2018": 0.0011905666680117831,
+          "2019": 0.0010408573658463943,
+          "2020": 0.009396317213145135,
+          "2021": 0.0016257011100246153,
+          "2022": 0.010577789126213712
+        },
+        "0.8": {
+          "2016": 0.0008975991811733037,
+          "2017": 0.000492251055532639,
+          "2018": 0.0011629991164642582,
+          "2019": 0.0010037399273245277,
+          "2020": 0.009454140467735569,
+          "2021": 0.0015907920946491142,
+          "2022": 0.010483710134109848
+        },
+        "0.95": {
+          "2016": 0.0008797919002319893,
+          "2017": 0.0004800273996083628,
+          "2018": 0.0011592098830113262,
+          "2019": 0.0009871219199122671,
+          "2020": 0.009556285791263395,
+          "2021": 0.001587024093402362,
+          "2022": 0.01041500458066566
+        },
+        "0.99": {
+          "2016": 0.0008774100590551726,
+          "2017": 0.0004780983618850645,
+          "2018": 0.001161260350933404,
+          "2019": 0.0009846699438491242,
+          "2020": 0.009589243577644834,
+          "2021": 0.001589298560898439,
+          "2022": 0.010396913067614262
+        },
+        "0.9999": {
+          "2016": 0.0008769812765560989,
+          "2017": 0.0004777166910941511,
+          "2018": 0.0011619651834263423,
+          "2019": 0.0009841898638529075,
+          "2020": 0.009597619642870222,
+          "2021": 0.001590048857312821,
+          "2022": 0.010392501250464835
+        }
+      },
+      "forecast_cases": {
+        "0.45": {
+          "mean_loss": 0.0032150872371036364,
+          "observations": 1438,
+          "year_mean_losses": {
+            "2016": 0.0009621706365734637,
+            "2017": 0.0005322705068004632,
+            "2018": 0.0012205704793170121,
+            "2019": 0.0010747290157413717,
+            "2020": 0.009403687864052844,
+            "2021": 0.0016673985034887362,
+            "2022": 0.010660266681981433
+          }
+        },
+        "0.6": {
+          "mean_loss": 0.0031829112343473285,
+          "observations": 1438,
+          "year_mean_losses": {
+            "2016": 0.0009349931232243939,
+            "2017": 0.0005156201637484649,
+            "2018": 0.001191950687037961,
+            "2019": 0.0010408558953717893,
+            "2020": 0.009379045147315461,
+            "2021": 0.0016268210753091017,
+            "2022": 0.010581436298664437
+          }
+        },
+        "0.8": {
+          "mean_loss": 0.0031591549502051823,
+          "observations": 1438,
+          "year_mean_losses": {
+            "2016": 0.0008980203421377983,
+            "2017": 0.0004926554614495661,
+            "2018": 0.0011642369762351736,
+            "2019": 0.0010031097281977006,
+            "2020": 0.009417934316847041,
+            "2021": 0.0015913884238957206,
+            "2022": 0.010482089607645621
+          }
+        },
+        "0.95": {
+          "mean_loss": 0.0031609658334197832,
+          "observations": 1438,
+          "year_mean_losses": {
+            "2016": 0.000879816083321485,
+            "2017": 0.00048027845449742017,
+            "2018": 0.0011599974814113212,
+            "2019": 0.0009857537782223863,
+            "2020": 0.009501966910883335,
+            "2021": 0.0015867756253953981,
+            "2022": 0.010407359985276964
+          }
+        },
+        "0.99": {
+          "mean_loss": 0.0031642492203520054,
+          "observations": 1438,
+          "year_mean_losses": {
+            "2016": 0.0008773058454493263,
+            "2017": 0.00047829490191447777,
+            "2018": 0.0011618890716946844,
+            "2019": 0.0009830870739041652,
+            "2020": 0.00953000904767393,
+            "2021": 0.0015887863957948526,
+            "2022": 0.0103875910847109
+          }
+        },
+        "0.9999": {
+          "mean_loss": 0.003165222579275037,
+          "observations": 1438,
+          "year_mean_losses": {
+            "2016": 0.0008768444695429877,
+            "2017": 0.0004778991275854483,
+            "2018": 0.0011625529019305856,
+            "2019": 0.0009825537418313797,
+            "2020": 0.00953718411299276,
+            "2021": 0.0015894704946209722,
+            "2022": 0.010382769133864874
+          }
+        }
+      },
+      "forecast_training_ar1": -0.046564837099448336,
+      "forecast_improvement_vs_045": 0.015509581591795607,
+      "forecast_improvement_vs_080": -0.0019206494032399934,
+      "improvement_from_forecast": 0.0036246174599204872,
+      "improvement_vs_045": 0.012112951753839862,
+      "improvement_vs_080": -0.0036115658617006385,
+      "improvement_vs_099": -0.00039179301769398656
+    },
+    {
+      "series": "BRENT_EIA",
+      "source": {
+        "name": "BRENT_EIA",
+        "series": "RBRTE",
+        "url": "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls",
+        "units": "USD/barrel",
+        "source_sheet": "Data 1",
+        "source_header": [
+          "Date",
+          "Europe Brent Spot Price FOB (Dollars per Barrel)"
+        ],
+        "source_valid_rows": 9097,
+        "source_invalid_rows": 0,
+        "source_first_date": "1987-05-20",
+        "source_last_date": "2026-09-29",
+        "selected_rows": 4980,
+        "selected_first": "2002-01-02",
+        "selected_last": "2022-05-23",
+        "raw_sha256": "bf3da33d21e30b387cc543bb1d6690d123ffd9b196f37cabd8624e9f9c08ecd1",
+        "csv_sha256": "c3c31ff06cb0738cc028130818f629de60ecb072277b0a79f89d063acc9e2d74",
+        "full_csv_sha256": "1d7107f9b59b28ca39a86977b0b75908f25eb9aa2becf481061dff41296c4398",
+        "full_rows": 6080
+      },
+      "chronological_split": {
+        "train_days": 3485,
+        "test_days": 1494,
+        "train_scale": 1.4453852656994401,
+        "train_center": 0.007001434720229555,
+        "start": "2002-01-02T00:00:00",
+        "end": "2022-05-23T00:00:00",
+        "test_start": "2016-07-11T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": 0.03625732509641228,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2016": 0.0013283925825044837,
+          "2017": 0.0007430956021090682,
+          "2018": 0.0015484066179841628,
+          "2019": 0.0014821643826093698,
+          "2020": 0.0029159059931130665,
+          "2021": 0.0019644568766547595,
+          "2022": 0.015078428659240034
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.002714721697522337,
+          "observations": 1494
+        },
+        "0.6": {
+          "mean_loss": 0.0026476384785123924,
+          "observations": 1494
+        },
+        "0.8": {
+          "mean_loss": 0.0025847751570967276,
+          "observations": 1494
+        },
+        "0.95": {
+          "mean_loss": 0.0025702192468363507,
+          "observations": 1494
+        },
+        "0.99": {
+          "mean_loss": 0.002571611475158379,
+          "observations": 1494
+        },
+        "0.9999": {
+          "mean_loss": 0.002572281862445515,
+          "observations": 1494
+        }
+      },
+      "year_losses": {
+        "0.45": {
+          "2016": 0.001478663623457438,
+          "2017": 0.000813623976577462,
+          "2018": 0.0016155829186279746,
+          "2019": 0.0015989678449387218,
+          "2020": 0.0031264047484013207,
+          "2021": 0.002035765425303244,
+          "2022": 0.015666197523691
+        },
+        "0.6": {
+          "2016": 0.0014280786722025134,
+          "2017": 0.0007924303916632769,
+          "2018": 0.001571176517421539,
+          "2019": 0.0015565404542810665,
+          "2020": 0.0029843449322290425,
+          "2021": 0.0019983239393813468,
+          "2022": 0.01545412996355569
+        },
+        "0.8": {
+          "2016": 0.0013636682286304826,
+          "2017": 0.0007629835105456414,
+          "2018": 0.0015373357540448675,
+          "2019": 0.0015094063546642494,
+          "2020": 0.0028790513543550315,
+          "2021": 0.0019661324911324843,
+          "2022": 0.01522125974587967
+        },
+        "0.95": {
+          "2016": 0.0013332349536587938,
+          "2017": 0.0007464436862363233,
+          "2018": 0.0015411269811129247,
+          "2019": 0.0014867820708756821,
+          "2020": 0.002892962048068976,
+          "2021": 0.001962001696121974,
+          "2022": 0.015104809479234918
+        },
+        "0.99": {
+          "2016": 0.001329135160196543,
+          "2017": 0.0007436619075298332,
+          "2018": 0.0015467369129004433,
+          "2019": 0.001482965570378674,
+          "2020": 0.002910694123158482,
+          "2021": 0.0019638334570660095,
+          "2022": 0.01508316072625981
+        },
+        "0.9999": {
+          "2016": 0.0013283925825044837,
+          "2017": 0.0007430956021090682,
+          "2018": 0.0015484066179841628,
+          "2019": 0.0014821643826093698,
+          "2020": 0.0029159059931130665,
+          "2021": 0.0019644568766547595,
+          "2022": 0.015078428659240034
+        }
+      },
+      "forecast_cases": {
+        "0.45": {
+          "mean_loss": 0.0027132044995957774,
+          "observations": 1494,
+          "year_mean_losses": {
+            "2016": 0.0014777516261005167,
+            "2017": 0.0008132074393665882,
+            "2018": 0.0016140834356379312,
+            "2019": 0.0015988963808916334,
+            "2020": 0.003123015526350646,
+            "2021": 0.002035097887699392,
+            "2022": 0.01565988619827156
+          }
+        },
+        "0.6": {
+          "mean_loss": 0.002646045854807834,
+          "observations": 1494,
+          "year_mean_losses": {
+            "2016": 0.0014271215945798352,
+            "2017": 0.0007919840512730578,
+            "2018": 0.0015694152954149046,
+            "2019": 0.0015567869492924627,
+            "2020": 0.0029797845160953406,
+            "2021": 0.001997883889982204,
+            "2022": 0.015449102628991358
+          }
+        },
+        "0.8": {
+          "mean_loss": 0.0025838467566196275,
+          "observations": 1494,
+          "year_mean_losses": {
+            "2016": 0.0013630114277527782,
+            "2017": 0.0007626886036927773,
+            "2018": 0.0015356782513909213,
+            "2019": 0.001510596220743476,
+            "2020": 0.0028735548158354317,
+            "2021": 0.001966701462146498,
+            "2022": 0.015222676226409144
+          }
+        },
+        "0.95": {
+          "mean_loss": 0.002570397884515133,
+          "observations": 1494,
+          "year_mean_losses": {
+            "2016": 0.0013331024810838972,
+            "2017": 0.0007464171729121467,
+            "2018": 0.00153997062822702,
+            "2019": 0.0014890187344847822,
+            "2020": 0.00288762787901373,
+            "2021": 0.0019638251486539557,
+            "2022": 0.015114048501969684
+          }
+        },
+        "0.99": {
+          "mean_loss": 0.0025721405216627287,
+          "observations": 1494,
+          "year_mean_losses": {
+            "2016": 0.0013291746365910197,
+            "2017": 0.0007437226062095323,
+            "2018": 0.0015457640775292662,
+            "2019": 0.0014854997283568166,
+            "2020": 0.0029055346289291544,
+            "2021": 0.001966025353404839,
+            "2022": 0.015094640299595358
+          }
+        },
+        "0.9999": {
+          "mean_loss": 0.0025728992572677896,
+          "observations": 1494,
+          "year_mean_losses": {
+            "2016": 0.0013284758732848964,
+            "2017": 0.000743178468523571,
+            "2018": 0.0015474814443964722,
+            "2019": 0.0014847718707551706,
+            "2020": 0.0029107969266895617,
+            "2021": 0.001966740199160704,
+            "2022": 0.015090460087107295
+          }
+        }
+      },
+      "forecast_training_ar1": 0.03625732509641228,
+      "forecast_improvement_vs_045": 0.0517120041445055,
+      "forecast_improvement_vs_080": 0.004236899624093904,
+      "improvement_from_forecast": -0.0002400183398594269,
+      "improvement_vs_045": 0.05246940605618011,
+      "improvement_vs_080": 0.00483341640641799,
+      "improvement_vs_099": -0.00026068762470998763
+    },
+    {
+      "series": "HENRY_EIA",
+      "source": {
+        "name": "HENRY_EIA",
+        "series": "RNGWHHD",
+        "url": "https://www.eia.gov/dnav/ng/hist_xls/RNGWHHDd.xls",
+        "units": "USD/million_BTU",
+        "source_sheet": "Data 1",
+        "source_header": [
+          "Date",
+          "Henry Hub Natural Gas Spot Price (Dollars per Million Btu)"
+        ],
+        "source_valid_rows": 5697,
+        "source_invalid_rows": 1,
+        "source_first_date": "1997-01-07",
+        "source_last_date": "2026-09-29",
+        "selected_rows": 4132,
+        "selected_first": "2002-01-03",
+        "selected_last": "2022-05-23",
+        "raw_sha256": "8e1a3202a31c4b4d98be1341d0a6e8478c7c1d2c71ab9353e602bce8f4d8cfd7",
+        "csv_sha256": "c314c6aa28f3949d89da4591bb6e27ed00bd3f9d74264ecc2527ba4064c53a20",
+        "full_csv_sha256": "e78d0dad9e708213e593306e46f684805772a11136c8f33fb7c1ceaf960e3868",
+        "full_rows": 5217
+      },
+      "chronological_split": {
+        "train_days": 2891,
+        "test_days": 1240,
+        "train_scale": 0.3558391090139697,
+        "train_center": 0.00012798339674852997,
+        "start": "2002-01-03T00:00:00",
+        "end": "2022-05-23T00:00:00",
+        "test_start": "2017-06-15T00:00:00",
+        "negative_price_days": 0,
+        "training_ar1": 0.024586379024815586,
+        "forecast_module": false,
+        "year_mean_losses": {
+          "2017": 0.0001354404331889605,
+          "2018": 0.0012430000996493638,
+          "2019": 0.00022927547035001922,
+          "2020": 0.00023898669782219988,
+          "2021": 0.020137027791413444,
+          "2022": 0.0019343369477341972
+        }
+      },
+      "controller_cases": {
+        "0.45": {
+          "mean_loss": 0.004560897816642079,
+          "observations": 1240
+        },
+        "0.6": {
+          "mean_loss": 0.004571207544485843,
+          "observations": 1240
+        },
+        "0.8": {
+          "mean_loss": 0.004585319047856679,
+          "observations": 1240
+        },
+        "0.95": {
+          "mean_loss": 0.004588988360151547,
+          "observations": 1240
+        },
+        "0.99": {
+          "mean_loss": 0.004588136498010587,
+          "observations": 1240
+        },
+        "0.9999": {
+          "mean_loss": 0.004587793256253314,
+          "observations": 1240
+        }
+      },
+      "year_losses": {
+        "0.45": {
+          "2017": 0.00013884225170965114,
+          "2018": 0.0012427339968426303,
+          "2019": 0.00024375379650756496,
+          "2020": 0.00025082132505768794,
+          "2021": 0.019969142711808295,
+          "2022": 0.0019524312267636186
+        },
+        "0.6": {
+          "2017": 0.00013803697662122157,
+          "2018": 0.001240600156934574,
+          "2019": 0.00023939894265571714,
+          "2020": 0.0002464512680610662,
+          "2021": 0.020035457981562567,
+          "2022": 0.0019419376933832385
+        },
+        "0.8": {
+          "2017": 0.0001367601640851181,
+          "2018": 0.0012408949090670265,
+          "2019": 0.00023338695635901797,
+          "2020": 0.00024137276147771796,
+          "2021": 0.020119438226974543,
+          "2022": 0.001934886008213338
+        },
+        "0.95": {
+          "2017": 0.0001357593399667566,
+          "2018": 0.0012426001129574654,
+          "2019": 0.00022999131311895118,
+          "2020": 0.00023928032878165996,
+          "2021": 0.02014221797135763,
+          "2022": 0.001934137649955835
+        },
+        "0.99": {
+          "2017": 0.00013550275848334245,
+          "2018": 0.0012429378359156073,
+          "2019": 0.00022939902749661396,
+          "2020": 0.00023902999879047552,
+          "2021": 0.020138603483672243,
+          "2022": 0.0019342856562124579
+        },
+        "0.9999": {
+          "2017": 0.0001354404331889605,
+          "2018": 0.0012430000996493638,
+          "2019": 0.00022927547035001922,
+          "2020": 0.00023898669782219988,
+          "2021": 0.020137027791413444,
+          "2022": 0.0019343369477341972
+        }
+      },
+      "forecast_cases": {
+        "0.45": {
+          "mean_loss": 0.0045618710601271735,
+          "observations": 1240,
+          "year_mean_losses": {
+            "2017": 0.00013884780723690004,
+            "2018": 0.001242604728193768,
+            "2019": 0.0002437743575241551,
+            "2020": 0.0002508104433937385,
+            "2021": 0.019974263275287583,
+            "2022": 0.0019519254890999244
+          }
+        },
+        "0.6": {
+          "mean_loss": 0.00457385567444945,
+          "observations": 1240,
+          "year_mean_losses": {
+            "2017": 0.00013807569860246834,
+            "2018": 0.0012406870988272117,
+            "2019": 0.000239476776260122,
+            "2020": 0.0002464880074319471,
+            "2021": 0.020048454712339583,
+            "2022": 0.0019415883425520865
+          }
+        },
+        "0.8": {
+          "mean_loss": 0.004591742225913879,
+          "observations": 1240,
+          "year_mean_losses": {
+            "2017": 0.00013687522535884674,
+            "2018": 0.0012415913845102195,
+            "2019": 0.00023359967832256248,
+            "2020": 0.00024153863298437278,
+            "2021": 0.020149926525005947,
+            "2022": 0.0019351742564273724
+          }
+        },
+        "0.95": {
+          "mean_loss": 0.004599030769821309,
+          "observations": 1240,
+          "year_mean_losses": {
+            "2017": 0.00013594339173113258,
+            "2018": 0.0012439298579999297,
+            "2019": 0.000230341206865485,
+            "2020": 0.00023958396905678447,
+            "2021": 0.02018935816411209,
+            "2022": 0.0019351650045871009
+          }
+        },
+        "0.99": {
+          "mean_loss": 0.004599147564093686,
+          "observations": 1240,
+          "year_mean_losses": {
+            "2017": 0.00013570407211826985,
+            "2018": 0.001244439454555955,
+            "2019": 0.00022978727149087973,
+            "2020": 0.00023937235138539508,
+            "2021": 0.020190191234079842,
+            "2022": 0.0019355211265483431
+          }
+        },
+        "0.9999": {
+          "mean_loss": 0.0045990396810145304,
+          "observations": 1240,
+          "year_mean_losses": {
+            "2017": 0.00013564584247847792,
+            "2018": 0.0012445434762456348,
+            "2019": 0.0002296731544891102,
+            "2020": 0.00023933857177356352,
+            "2021": 0.02018969582482708,
+            "2022": 0.0019356234471308439
+          }
+        }
+      },
+      "forecast_training_ar1": 0.024586379024815586,
+      "forecast_improvement_vs_045": -0.008147670198797918,
+      "forecast_improvement_vs_080": -0.001589256265185801,
+      "improvement_from_forecast": -0.0024513800280530074,
+      "improvement_vs_045": -0.005896961671252088,
+      "improvement_vs_080": -0.0005395935093746029,
+      "improvement_vs_099": 7.481071180459598e-05
+    }
+  ],
+  "repository_data_quality": {
+    "gasoil_largest_jump": {
+      "before_date": "2009-03-27T00:00:00",
+      "after_date": "2009-03-30T00:00:00",
+      "before_value": 45525.0,
+      "after_value": 439.25,
+      "ratio": 103.64257256687536
+    },
+    "interpretation": "Approximately 100-fold price-scale discontinuity; original results retained, not silently repaired."
+  },
+  "blind_cost_audits": [
+    {
+      "controller_beta": 0.9999,
+      "alpha": 0.06666,
+      "reported_costs_not_used": true,
+      "recovered": [
+        0.06666011041992913,
+        0.9998996675350246,
+        1.99999999033661,
+        3.999999960333821
+      ],
+      "pencil_singular_values": [
+        0.00036586466783738954,
+        3.3750086349200746e-05,
+        1.3606676686213011e-05,
+        4.036183954643673e-06,
+        6.6712237271391805e-09,
+        2.3752023954476372e-14
+      ],
+      "certificate": {
+        "beta_interval": [
+          0.9993745929575433,
+          1.0
+        ],
+        "informative": true,
+        "inverse_defect": 0.00022128253885977958,
+        "vector_radius": 0.0005173189308979939,
+        "selected_rows": [
+          3,
+          10,
+          1,
+          24,
+          30
+        ],
+        "normalized_vector": [
+          0.033331350369732206,
+          0.027408817476908664,
+          0.9794028144772073,
+          0.9998919118884414,
+          0.9792994736805781
+        ],
+        "beta": 0.9998919118884414,
+        "bound_half_width": 1.1e-12
+      },
+      "clock_cut": 0.99,
+      "action": "accept",
+      "nominal_cost_error_witness": [
+        0.2190014849532823,
+        1.4383593119256615
+      ],
+      "exact_rational_response_error": 4.796487165613452e-13
+    },
+    {
+      "controller_beta": 0.8,
+      "alpha": 0.06666,
+      "reported_costs_not_used": true,
+      "recovered": [
+        0.06668121401432006,
+        0.7998990215387913,
+        1.9999998947464288,
+        3.9999996209137527
+      ],
+      "pencil_singular_values": [
+        0.00037544725656838107,
+        4.2804307925613195e-05,
+        7.53706893567746e-06,
+        1.4671361894495843e-06,
+        2.981110841623008e-11,
+        1.4656164698972108e-14
+      ],
+      "certificate": {
+        "beta_interval": [
+          0.6964030110498315,
+          0.9021109945844844
+        ],
+        "informative": true,
+        "inverse_defect": 0.07452487456612315,
+        "vector_radius": 0.10285399176732639,
+        "selected_rows": [
+          4,
+          13,
+          1,
+          30,
+          8
+        ],
+        "normalized_vector": [
+          0.03340805978728706,
+          0.025610876831393833,
+          1.1038917650482956,
+          0.799257002817158,
+          0.882424366907751
+        ],
+        "beta": 0.799257002817158,
+        "bound_half_width": 1.1e-12
+      },
+      "clock_cut": 0.99,
+      "action": "fail_clock",
+      "nominal_cost_error_witness": [
+        0.3699688778688134,
+        0.7925677532285179
+      ],
+      "exact_rational_response_error": 4.769188222586864e-13
+    }
+  ],
+  "external_vs_bellman_checks": 27,
+  "max_forward_error": 9.2148511043888e-15,
+  "limitations": [
+    "Actual historical price paths; positions are counterfactual external-code replays, not observed trades.",
+    "Quadratic coefficients are software objectives from repository settings, not measured market impact.",
+    "Positive heterogeneous risk targets are constructed at prescribed horizons; not inferred investor forecasts.",
+    "Task loss uses equal period weights and private rule losses; not investment profit or an identified aggregate loss.",
+    "Float guard is validated for these finite replays, not a general proof of source-code rounding error."
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "observation_id": "M01",
+  "access": "Fields manually verified in SEC rendered official filings; raw XML downloads returned HTTP 403. No full XML archive claimed.",
+  "series": "S000040316",
+  "class": "C000125223",
+  "fund": "iShares MSCI USA Momentum Factor ETF",
+  "snapshots": [
+    {
+      "date": "2025-10-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1100663/000100472625003143/xslFormNPORT-P_X01/primary_doc.xml",
+      "net_assets_usd": "19473575078.72",
+      "holdings": {
+        "NVDA": {
+          "cusip": "67066G104",
+          "shares": "4674354.00000000",
+          "value_usd": "946509941.46000000",
+          "weight_percent": "4.860483694616"
+        },
+        "AVGO": {
+          "cusip": "11135F101",
+          "shares": "3037526.00000000",
+          "value_usd": "1122760735.38000000",
+          "weight_percent": "5.765560411179"
+        }
+      },
+      "preceding_three_months_sold_usd": [
+        "781368411.70",
+        "745299016.50",
+        "662912023.30"
+      ],
+      "preceding_three_months_redeemed_usd": [
+        "389957750.25",
+        "460750288.45",
+        "393995380.00"
+      ]
+    },
+    {
+      "date": "2026-04-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1100663/000100472626005159/xslFormNPORT-P_X01/primary_doc.xml",
+      "net_assets_usd": "24178014844.03",
+      "holdings": {
+        "NVDA": {
+          "cusip": "67066G104",
+          "shares": "5621005.00000000",
+          "value_usd": "1121783967.85000000",
+          "weight_percent": "4.639685991949"
+        },
+        "AVGO": {
+          "cusip": "11135F101",
+          "shares": "3126592.00000000",
+          "value_usd": "1305133298.56000000",
+          "weight_percent": "5.398016780861"
+        }
+      },
+      "preceding_three_months_sold_usd": [
+        "632839095.95",
+        "445422697.04",
+        "421475730.10"
+      ],
+      "preceding_three_months_redeemed_usd": [
+        "442684928.35",
+        "338584295.70",
+        "177946564.35"
+      ]
+    }
+  ],
+  "field_locators": {
+    "date": "A.3.b, not fiscal year end A.3.a",
+    "net_assets": "B.1.c",
+    "holdings": "Part C: match CUSIP; balance, currency value, percentage of net assets",
+    "flows": "B.6; each snapshot covers preceding three months only"
+  },
+  "limitations": [
+    "Two selected holdings, not a representative sample",
+    "Six-month endpoints, not a time-resolved impulse response",
+    "Unadjusted reported share balances, not inferred net buying",
+    "Unknown targets, cost interventions and common transmission",
+    "Nonzero fund flows, not full six-month flow coverage"
+  ]
+}

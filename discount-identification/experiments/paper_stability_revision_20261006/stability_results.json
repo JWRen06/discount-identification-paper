@@ -1,0 +1,794 @@
+{
+  "input_sha256": "b2087c9b23d53fd27c2e9b578601f49d93eac09b1d5370ae97111e56bd53455b",
+  "method": "all-row shared-polynomial componentwise verified supersolution",
+  "comparisons": [
+    {
+      "label": "configured_clock",
+      "old": {
+        "beta_interval": [
+          0.9993745929575433,
+          1.0
+        ],
+        "informative": true,
+        "inverse_defect": 0.00022128253885977958,
+        "vector_radius": 0.0005173189308979939,
+        "selected_rows": [
+          3,
+          10,
+          1,
+          24,
+          30
+        ],
+        "normalized_vector": [
+          0.033331350369732206,
+          0.027408817476908664,
+          0.9794028144772073,
+          0.9998919118884414,
+          0.9792994736805781
+        ],
+        "beta": 0.9998919118884414,
+        "bound_half_width": 1.1e-12
+      },
+      "new": {
+        "beta_interval": [
+          0.9998873900931402,
+          0.9999119449256524
+        ],
+        "informative": true,
+        "center": [
+          0.03333005537525935,
+          0.027407754960165676,
+          0.9794028090346494,
+          0.9998996675093963,
+          0.9793046462787629
+        ],
+        "component_radii": [
+          2.051037156653571e-06,
+          1.6823610750796189e-06,
+          1.6399174381553108e-08,
+          1.2277416255992333e-05,
+          8.187611122034232e-06
+        ],
+        "weighted_contraction": 1.9954964184621415e-05,
+        "rows": 31,
+        "error_half_width": 1.1e-12
+      }
+    },
+    {
+      "label": "configured_clock",
+      "old": {
+        "beta_interval": [
+          0.9947084177593133,
+          1.0
+        ],
+        "informative": true,
+        "inverse_defect": 0.002212821074863537,
+        "vector_radius": 0.005183494129127947,
+        "selected_rows": [
+          3,
+          10,
+          1,
+          24,
+          30
+        ],
+        "normalized_vector": [
+          0.033331350369732206,
+          0.027408817476908664,
+          0.9794028144772073,
+          0.9998919118884414,
+          0.9792994736805781
+        ],
+        "beta": 0.9998919118884414,
+        "bound_half_width": 1.1e-11
+      },
+      "new": {
+        "beta_interval": [
+          0.9997768790041529,
+          1.0
+        ],
+        "informative": true,
+        "center": [
+          0.03333005537525935,
+          0.027407754960165676,
+          0.9794028090346494,
+          0.9998996675093963,
+          0.9793046462787629
+        ],
+        "component_radii": [
+          2.051280196455835e-05,
+          1.682555201276953e-05,
+          1.6401577365934644e-07,
+          0.00012278850524332383,
+          8.188576328731036e-05
+        ],
+        "weighted_contraction": 0.00019953746930643666,
+        "rows": 31,
+        "error_half_width": 1.1e-11
+      }
+    },
+    {
+      "label": "configured_clock",
+      "old": {
+        "beta_interval": [
+          0.9470013178518679,
+          1.0
+        ],
+        "informative": true,
+        "inverse_defect": 0.022128207053242716,
+        "vector_radius": 0.05289059403657336,
+        "selected_rows": [
+          3,
+          10,
+          1,
+          24,
+          30
+        ],
+        "normalized_vector": [
+          0.033331350369732206,
+          0.027408817476908664,
+          0.9794028144772073,
+          0.9998919118884414,
+          0.9792994736805781
+        ],
+        "beta": 0.9998919118884414,
+        "bound_half_width": 1.1e-10
+      },
+      "new": {
+        "beta_interval": [
+          0.9986699136128507,
+          1.0
+        ],
+        "informative": true,
+        "center": [
+          0.03333005537525935,
+          0.027407754960165676,
+          0.9794028090346494,
+          0.9998996675093963,
+          0.9793046462787629
+        ],
+        "component_radii": [
+          0.00020544029642517074,
+          0.0001685116299628264,
+          1.6431027600647845e-06,
+          0.0012297538965454842,
+          0.0008201033453652348
+        ],
+        "weighted_contraction": 0.001994823413283354,
+        "rows": 31,
+        "error_half_width": 1.1e-10
+      }
+    },
+    {
+      "label": "configured_clock",
+      "old": {
+        "beta_interval": [
+          0.33572051378232354,
+          1.0
+        ],
+        "informative": true,
+        "inverse_defect": 0.22128206607385473,
+        "vector_radius": 0.6641713981061178,
+        "selected_rows": [
+          3,
+          10,
+          1,
+          24,
+          30
+        ],
+        "normalized_vector": [
+          0.033331350369732206,
+          0.027408817476908664,
+          0.9794028144772073,
+          0.9998919118884414,
+          0.9792994736805781
+        ],
+        "beta": 0.9998919118884414,
+        "bound_half_width": 1.1e-09
+      },
+      "new": {
+        "beta_interval": [
+          0.987411623340728,
+          1.0
+        ],
+        "informative": true,
+        "center": [
+          0.03333005537525935,
+          0.027407754960165676,
+          0.9794028090346494,
+          0.9998996675093963,
+          0.9793046462787629
+        ],
+        "component_radii": [
+          0.0020862324168614142,
+          0.0017112261411466048,
+          1.673109336892939e-05,
+          0.012488044168668215,
+          0.008328008935938701
+        ],
+        "weighted_contraction": 0.019893930762908105,
+        "rows": 31,
+        "error_half_width": 1.1e-09
+      }
+    },
+    {
+      "label": "configured_clock",
+      "old": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "inverse perturbation too large",
+        "inverse_defect": 2.212820659390674
+      },
+      "new": {
+        "beta_interval": [
+          0.8521268357482146,
+          1.0
+        ],
+        "informative": true,
+        "center": [
+          0.03333005537525935,
+          0.027407754960165676,
+          0.9794028090346494,
+          0.9998996675093963,
+          0.9793046462787629
+        ],
+        "component_radii": [
+          0.024687162003857652,
+          0.020249798859460877,
+          0.000203368537499548,
+          0.1477728317611816,
+          0.0985383092054406
+        ],
+        "weighted_contraction": 0.19366801879219384,
+        "rows": 31,
+        "error_half_width": 1.1e-08
+      }
+    },
+    {
+      "label": "configured_clock",
+      "old": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "inverse perturbation too large",
+        "inverse_defect": 22.128206933924748
+      },
+      "new": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "no verified positive supersolution",
+        "rows": 31,
+        "error_half_width": 1.1e-07
+      }
+    },
+    {
+      "label": "configured_clock",
+      "old": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "inverse perturbation too large",
+        "inverse_defect": 221.28210371095034
+      },
+      "new": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "no verified positive supersolution",
+        "rows": 31,
+        "error_half_width": 1.1e-06
+      }
+    },
+    {
+      "label": "short_clock",
+      "old": {
+        "beta_interval": [
+          0.6964030110498315,
+          0.9021109945844844
+        ],
+        "informative": true,
+        "inverse_defect": 0.07452487456612315,
+        "vector_radius": 0.10285399176732639,
+        "selected_rows": [
+          4,
+          13,
+          1,
+          30,
+          8
+        ],
+        "normalized_vector": [
+          0.03340805978728706,
+          0.025610876831393833,
+          1.1038917650482956,
+          0.799257002817158,
+          0.882424366907751
+        ],
+        "beta": 0.799257002817158,
+        "bound_half_width": 1.1e-12
+      },
+      "new": {
+        "beta_interval": [
+          0.7979247526394382,
+          0.8018726194992716
+        ],
+        "informative": true,
+        "center": [
+          0.03334064400542047,
+          0.025559203806096775,
+          1.103891768008595,
+          0.7998986860693549,
+          0.8830194577676593
+        ],
+        "component_radii": [
+          0.00020738314636928603,
+          0.000158959828402009,
+          2.307715810119235e-08,
+          0.0019739334299165765,
+          0.0018305695816144968
+        ],
+        "weighted_contraction": 0.0038434705186247554,
+        "rows": 31,
+        "error_half_width": 1.1e-12
+      }
+    },
+    {
+      "label": "short_clock",
+      "old": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "inverse_defect": 0.7452470737043776,
+        "vector_radius": 3.7323545571143373,
+        "selected_rows": [
+          4,
+          13,
+          1,
+          30,
+          8
+        ],
+        "normalized_vector": [
+          0.03340805978728706,
+          0.025610876831393833,
+          1.1038917650482956,
+          0.799257002817158,
+          0.882424366907751
+        ],
+        "beta": 0.799257002817158,
+        "bound_half_width": 1.1e-11
+      },
+      "new": {
+        "beta_interval": [
+          0.7796135319447971,
+          0.8201838401939127
+        ],
+        "informative": true,
+        "center": [
+          0.03334064400542047,
+          0.025559203806096775,
+          1.103891768008595,
+          0.7998986860693549,
+          0.8830194577676593
+        ],
+        "component_radii": [
+          0.0021311755979442756,
+          0.0016335524708398436,
+          2.389917529203661e-07,
+          0.020285154124557662,
+          0.018811886477060922
+        ],
+        "weighted_contraction": 0.03813796953886405,
+        "rows": 31,
+        "error_half_width": 1.1e-11
+      }
+    },
+    {
+      "label": "short_clock",
+      "old": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "inverse perturbation too large",
+        "inverse_defect": 7.452469147800008
+      },
+      "new": {
+        "beta_interval": [
+          0.5193586660095005,
+          1.0
+        ],
+        "informative": true,
+        "center": [
+          0.03334064400542047,
+          0.025559203806096775,
+          1.103891768008595,
+          0.7998986860693549,
+          0.8830194577676593
+        ],
+        "component_radii": [
+          0.029473771178327498,
+          0.022591715399491705,
+          3.5593024700640084e-06,
+          0.2805400200598542,
+          0.260165481487166
+        ],
+        "weighted_contraction": 0.3541533801027855,
+        "rows": 31,
+        "error_half_width": 1.1e-10
+      }
+    },
+    {
+      "label": "short_clock",
+      "old": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "inverse perturbation too large",
+        "inverse_defect": 74.5246898627957
+      },
+      "new": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "no verified positive supersolution",
+        "rows": 31,
+        "error_half_width": 1.1e-09
+      }
+    },
+    {
+      "label": "short_clock",
+      "old": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "inverse perturbation too large",
+        "inverse_defect": 745.2469050437218
+      },
+      "new": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "no verified positive supersolution",
+        "rows": 31,
+        "error_half_width": 1.1e-08
+      }
+    },
+    {
+      "label": "short_clock",
+      "old": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "inverse perturbation too large",
+        "inverse_defect": 7452.469891235471
+      },
+      "new": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "no verified positive supersolution",
+        "rows": 31,
+        "error_half_width": 1.1e-07
+      }
+    },
+    {
+      "label": "short_clock",
+      "old": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "inverse perturbation too large",
+        "inverse_defect": 74524.7831625616
+      },
+      "new": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "no verified positive supersolution",
+        "rows": 31,
+        "error_half_width": 1.1e-06
+      }
+    }
+  ],
+  "generic_rank_witness": {
+    "beta": "2/3",
+    "alpha": "5/2",
+    "execution_roots": [
+      "1/4",
+      "2/5",
+      "3/5"
+    ],
+    "costs": [
+      "1",
+      "25/11",
+      "25/4"
+    ],
+    "pool": [
+      [
+        "1/10",
+        "1"
+      ],
+      [
+        "7/10",
+        "1"
+      ]
+    ],
+    "L": 6,
+    "minor_columns": [
+      0,
+      1,
+      3,
+      4,
+      5
+    ],
+    "determinant": "-27622085864083060103793364941/27033199426187695917472268839936000000000"
+  },
+  "exact_interval_product_checks": 120,
+  "design_comparisons": [
+    {
+      "private_costs": [
+        1.0,
+        2.0,
+        4.0
+      ],
+      "private_beta": 0.8,
+      "certificate": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "no verified positive supersolution",
+        "rows": 63,
+        "error_half_width": 1.00001e-08
+      }
+    },
+    {
+      "private_costs": [
+        1.0,
+        2.0,
+        4.0
+      ],
+      "private_beta": 0.9999,
+      "certificate": {
+        "beta_interval": [
+          0.9803130973253633,
+          1.0
+        ],
+        "informative": true,
+        "center": [
+          0.03330596913064454,
+          0.027387944099704575,
+          0.9794000665171985,
+          1.000039585364564,
+          0.9793946638826179
+        ],
+        "component_radii": [
+          0.00332710652273491,
+          0.0027323501623182783,
+          0.00010484046010170173,
+          0.01972648803920064,
+          0.0130356284253487
+        ],
+        "weighted_contraction": 0.03767552495394148,
+        "rows": 63,
+        "error_half_width": 1.00001e-08
+      }
+    },
+    {
+      "private_costs": [
+        0.01,
+        0.1,
+        1.0
+      ],
+      "private_beta": 0.8,
+      "certificate": {
+        "beta_interval": [
+          0.783142907508079,
+          0.8175100276665167
+        ],
+        "informative": true,
+        "center": [
+          0.6664292114008585,
+          0.8280562526343572,
+          3.497957650002997,
+          0.8003264675872979,
+          2.798713667499888
+        ],
+        "component_radii": [
+          0.008954530619428695,
+          0.011111558901734236,
+          8.172610941305218e-05,
+          0.017183560079218726,
+          0.018307518755213425
+        ],
+        "weighted_contraction": 0.012908878954343677,
+        "rows": 63,
+        "error_half_width": 1.00001e-08
+      }
+    },
+    {
+      "private_costs": [
+        0.01,
+        0.1,
+        1.0
+      ],
+      "private_beta": 0.9999,
+      "certificate": {
+        "beta_interval": [
+          0.9960488324259694,
+          1.0
+        ],
+        "informative": true,
+        "center": [
+          0.6665770018207855,
+          0.8622252935477938,
+          3.119624494489482,
+          0.9999412167838926,
+          3.1193415960269824
+        ],
+        "component_radii": [
+          0.0021925556156348384,
+          0.0028266927849640152,
+          0.00010107017926729623,
+          0.0038923843579230406,
+          0.002636164312222742
+        ],
+        "weighted_contraction": 0.0028954401706125866,
+        "rows": 63,
+        "error_half_width": 1.00001e-08
+      }
+    }
+  ],
+  "perturbation_checks": [
+    {
+      "costs": [
+        1.0,
+        2.0,
+        4.0
+      ],
+      "beta": 0.8,
+      "added_bounded_noise": 1e-08,
+      "coverage_checks": 16,
+      "determinate": 0
+    },
+    {
+      "costs": [
+        1.0,
+        2.0,
+        4.0
+      ],
+      "beta": 0.8,
+      "added_bounded_noise": 1e-06,
+      "coverage_checks": 16,
+      "determinate": 0
+    },
+    {
+      "costs": [
+        1.0,
+        2.0,
+        4.0
+      ],
+      "beta": 0.9999,
+      "added_bounded_noise": 1e-08,
+      "coverage_checks": 16,
+      "determinate": 0
+    },
+    {
+      "costs": [
+        1.0,
+        2.0,
+        4.0
+      ],
+      "beta": 0.9999,
+      "added_bounded_noise": 1e-06,
+      "coverage_checks": 16,
+      "determinate": 0
+    },
+    {
+      "costs": [
+        0.01,
+        0.1,
+        1.0
+      ],
+      "beta": 0.8,
+      "added_bounded_noise": 1e-08,
+      "coverage_checks": 16,
+      "determinate": 16
+    },
+    {
+      "costs": [
+        0.01,
+        0.1,
+        1.0
+      ],
+      "beta": 0.8,
+      "added_bounded_noise": 1e-06,
+      "coverage_checks": 16,
+      "determinate": 0
+    },
+    {
+      "costs": [
+        0.01,
+        0.1,
+        1.0
+      ],
+      "beta": 0.9999,
+      "added_bounded_noise": 1e-08,
+      "coverage_checks": 16,
+      "determinate": 16
+    },
+    {
+      "costs": [
+        0.01,
+        0.1,
+        1.0
+      ],
+      "beta": 0.9999,
+      "added_bounded_noise": 1e-06,
+      "coverage_checks": 16,
+      "determinate": 0
+    }
+  ],
+  "sample_amplitude_tradeoff": [
+    {
+      "subgaussian_response_noise_proxy": 0.0001,
+      "amplitude": 1.0,
+      "target_t": 1e-08,
+      "delta": 0.05,
+      "coefficients": 192,
+      "required_repetitions": 1789274966
+    },
+    {
+      "subgaussian_response_noise_proxy": 0.0001,
+      "amplitude": 100.0,
+      "target_t": 1e-08,
+      "delta": 0.05,
+      "coefficients": 192,
+      "required_repetitions": 178928
+    },
+    {
+      "subgaussian_response_noise_proxy": 0.0001,
+      "amplitude": 1000.0,
+      "target_t": 1e-08,
+      "delta": 0.05,
+      "coefficients": 192,
+      "required_repetitions": 1790
+    }
+  ],
+  "limitations": [
+    "Designs explored on previously observed configurations, not independent external validation.",
+    "Costs supplied to producer only; audit uses response labels.",
+    "Quantization noise is not market measurement noise.",
+    "Amplitude improvement requires linear unsaturated contract over the enlarged range."
+  ]
+}

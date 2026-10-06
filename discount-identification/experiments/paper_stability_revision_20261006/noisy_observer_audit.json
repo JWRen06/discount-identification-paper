@@ -1,0 +1,103 @@
+{
+  "input_sha256": "7258353491658b5551f07d9f76659013eab94a9a883b080c98a7822bef4419b0",
+  "results": [
+    {
+      "label": "case_1",
+      "certificate": {
+        "beta_interval": [
+          0.0,
+          1.0
+        ],
+        "informative": false,
+        "reason": "no verified positive supersolution",
+        "rows": 63,
+        "error_half_width": 1.00001e-08
+      },
+      "decision": "undetermined"
+    },
+    {
+      "label": "case_2",
+      "certificate": {
+        "beta_interval": [
+          0.9803130973253633,
+          1.0
+        ],
+        "informative": true,
+        "center": [
+          0.03330596913064454,
+          0.027387944099704575,
+          0.9794000665171985,
+          1.000039585364564,
+          0.9793946638826179
+        ],
+        "component_radii": [
+          0.00332710652273491,
+          0.0027323501623182783,
+          0.00010484046010170173,
+          0.01972648803920064,
+          0.0130356284253487
+        ],
+        "weighted_contraction": 0.03767552495394148,
+        "rows": 63,
+        "error_half_width": 1.00001e-08
+      },
+      "decision": "undetermined"
+    },
+    {
+      "label": "case_3",
+      "certificate": {
+        "beta_interval": [
+          0.783142907508079,
+          0.8175100276665167
+        ],
+        "informative": true,
+        "center": [
+          0.6664292114008585,
+          0.8280562526343572,
+          3.497957650002997,
+          0.8003264675872979,
+          2.798713667499888
+        ],
+        "component_radii": [
+          0.008954530619428695,
+          0.011111558901734236,
+          8.172610941305218e-05,
+          0.017183560079218726,
+          0.018307518755213425
+        ],
+        "weighted_contraction": 0.012908878954343677,
+        "rows": 63,
+        "error_half_width": 1.00001e-08
+      },
+      "decision": "fail"
+    },
+    {
+      "label": "case_4",
+      "certificate": {
+        "beta_interval": [
+          0.9960488324259694,
+          1.0
+        ],
+        "informative": true,
+        "center": [
+          0.6665770018207855,
+          0.8622252935477938,
+          3.119624494489482,
+          0.9999412167838926,
+          3.1193415960269824
+        ],
+        "component_radii": [
+          0.0021925556156348384,
+          0.0028266927849640152,
+          0.00010107017926729623,
+          0.0038923843579230406,
+          0.002636164312222742
+        ],
+        "weighted_contraction": 0.0028954401706125866,
+        "rows": 63,
+        "error_half_width": 1.00001e-08
+      },
+      "decision": "accept"
+    }
+  ]
+}
